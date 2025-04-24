@@ -1,0 +1,1438 @@
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL209__00_01_03 63.040 66.010}
+ORIG: delta two zero nine turn left heading two eight zero
+PROC: delta two zero nine turn left heading two eight zero
+NUMC: Delta 2 0 9 turn left heading 2 8 0
+PUNC: Delta 2 0 9 turn left heading 2 8 0.
+PUNE: Delta 209, turn left heading 280.
+PUNV: Delta 209, turn left heading 280.
+EDIT: The communication is clear and concise. However, adding a brief statement regarding the purpose of the heading change (e.g., 'for the approach') could provide additional context but is not necessary in this case.
+NOTE:
+    - Speaker: Tower Controller (inferred from context)
+
+    - Listener: Delta 209
+
+    - Event: The tower controller is instructing Delta 209 to change its heading to 280 degrees, likely for sequencing with other traffic or aligning with an approach path.
+
+    - Actions: Turn left to a heading of 280 degrees.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Delta 209  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 280  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DAL209__DR1-1__00_01_06 66.650 69.080}
+ORIG: left to two eighty delta two oh nine
+PROC: left to two eighty delta two oh nine
+NUMC: left to 280 Delta 209
+PUNC: left to 280 Delta 209.
+PUNE: Delta 209, left to heading 280.
+PUNV: Delta 209, turn left heading 280.
+EDIT: Rephrase to 'turn left heading 280' for clarity and compliance with ATC standards.
+NOTE:
+    - Speaker: Delta 209 (inferred from context)
+
+    - Listener: DR1-1 Controller
+
+    - Event: Confirmation of heading instruction
+
+    - Actions: Delta 209 turning left to heading 280.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [x] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Delta 209  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 280  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_01_33 93.550 96.110}
+ORIG: approach american eight ah fifteen eighty one is with you out of two
+PROC: approach american eight ah fifteen eighty one is with you out of two
+NUMC: approach American 8 ah 1581 is with you out of 2
+PUNC: approach American 8 ah 1581 is with you out of 2.
+PUNE: American 1581, approach, is with you out of 2.
+PUNV: American 1581, Approach, is with you out of two thousand.
+EDIT: Add 'thousand' after 'two' for clarity in altitude communication.
+NOTE:
+    - Speaker: Approach controller (Known from message content)
+
+    - Listener: American 1581
+
+    - Event: Handoff from Departure to Approach control at 2,000 feet.
+
+    - Actions: Informing the aircraft of transfer to Approach control.
+
+    - Intention:
+        - [x] "PSC": Pilot starts contact to ATC.
+        - [x] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: American 1581  # Aircraft Callsign
+        - Rway: 2  # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__AAL1581__00_01_36 96.630 101.060}
+ORIG: american fifteen eighty one washington departure radar contact climb and maintain one seven thousand
+PROC: american fifteen eighty one washington departure radar contact climb and maintain one seven thousand
+NUMC: American 1581 Washington departure radar contact climb and maintain 1 7000
+PUNC: American 1581 Washington departure radar contact climb and maintain 1 7000.
+PUNE: American 1581, Washington departure, radar contact, climb and maintain 17,000.
+PUNV: American 1581, Washington Departure, radar contact, climb and maintain 17,000.
+EDIT: Added comma after 'Washington Departure' for clarity; changed '17000' to '17,000' for standard formatting.
+NOTE:
+    - Speaker: Departure Controller (inferred)
+
+    - Listener: American 1581
+
+    - Event: Establishing radar contact and issuing climb instructions after takeoff.
+
+    - Actions: Establish radar contact; Climb to 17,000 feet
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [x] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: American 1581  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd: 17,000  # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_01_41 101.300 103.460}
+ORIG: up to one seven thousand american fifteen eighty one
+PROC: up to one seven thousand american fifteen eighty one
+NUMC: up to 1 7000 American 1581
+PUNC: up to 1 7000 American 1581.
+PUNE: American 1581, up to 17,000.
+PUNV: American 1581, climb to 17,000.
+EDIT: Adding 'climb' before 'to' for clarity as per standard ATC phraseology.
+NOTE:
+    - Speaker: Pilot of American 1581 (inferred)
+
+    - Listener: Washington Departure Controller
+
+    - Event: Acknowledgment of climb instruction to 17,000 feet.
+
+    - Actions: Aircraft climbing to and maintaining 17,000 feet.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [x] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [x] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: American 1581  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd: 17,000  # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL209__00_01_46 106.510 109.480}
+ORIG: delta two oh nine turn left heading two four zero
+PROC: delta two oh nine turn left heading two four zero
+NUMC: Delta 209 turn left heading 2 4 0
+PUNC: Delta 209 turn left heading 2 4 0.
+PUNE: Delta 209, turn left heading 240.
+PUNV: Delta 209, turn left heading 240.
+EDIT: Avoid repetition by removing redundant call sign mentions for brevity.
+NOTE:
+    - Speaker: Washington Departure Controller (inferred)
+
+    - Listener: Delta 209
+
+    - Event: Heading adjustment instruction
+
+    - Actions: Turn left; Change heading to 240
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Delta 209  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 240  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DAL209__DR1-1__00_01_49 109.850 112.060}
+ORIG: left to two forty delta two oh nine
+PROC: left to two forty delta two oh nine
+NUMC: left to 240 Delta 209
+PUNC: left to 240 Delta 209.
+PUNE: Delta 209, turn left heading 240.
+PUNV: Delta 209, turn left heading 240.
+EDIT: Consider using standardized phrase 'turn left heading' for consistency and clarity in ATC communications.
+NOTE:
+    - Speaker: Washington Departure Controller (inferred)
+
+    - Listener: Delta 209
+
+    - Event: Heading change instruction to Delta 209
+
+    - Actions: {'type': 'air guidance', 'details': 'Turn left heading 240'}
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [x] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Delta 209  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 240  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL209__00_03_15 195.950 201.460}
+ORIG: delta two oh nine turn right ah heading two seven zero direct linden when able and resume your own navigation
+PROC: delta two oh nine turn right ah heading two seven zero direct linden when able and resume your own navigation
+NUMC: Delta 209 turn right ah heading 2 7 0 direct linden when able and resume your own navigation
+PUNC: Delta 209 turn right ah heading 2 7 0 direct linden when able and resume your own navigation.
+PUNE: Delta 209, turn right heading 270, direct Linden when able and resume your own navigation.
+PUNV: Delta 209, turn right heading 270, direct Linden when able, and resume your own navigation.
+EDIT: Removed filler word 'ah' for clarity. Structured instructions in logical sequence for better understanding: turn direction, heading, destination, and further action.
+NOTE:
+    - Speaker: DCA Sector DR1-1 Controller (inferred)
+
+    - Listener: Delta 209
+
+    - Event: Adjustment of flight path for Delta 209
+
+    - Actions: Turn right to heading 270 degrees; Proceed direct to Linden when able; Resume own navigation
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Delta 209  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 270  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DAL209__DR1-1__00_03_21 201.980 204.770}
+ORIG: okay we'll go direct linden right now delta two oh nine
+PROC: okay we'll go direct linden right now delta two oh nine
+NUMC: okay we'll go direct linden right now Delta 209
+PUNC: okay we'll go direct linden right now Delta 209.
+PUNE: Okay, we'll go direct Linden right now, Delta 209.
+PUNV: Verified punctuation with improvements: 'Okay, we'll go direct Linden right now, Delta 209.'
+EDIT: Edit recommendations for better ATC communication: Consider adding 'proceed' before 'direct Linden' for clarity, e.g., 'Proceed direct Linden when able.'
+NOTE:
+    - Speaker: ATC Controller (specific controller handling Delta 209's sector) (inferred based on the context of the conversation and prior messages)
+
+    - Listener: Delta 209
+
+    - Event: Route change instruction to proceed directly to Linden
+
+    - Actions: Directing aircraft to change route immediately to Linden
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [x] "PRB": Pilot readback.
+        - [x] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Delta 209  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__AAL1581__00_03_25 205.160 208.220}
+ORIG: american fifteen eighty one turn left heading two niner zero vectors for your climb
+PROC: american fifteen eighty one turn left heading two nine zero vectors for your climb
+NUMC: American 1581 turn left heading 2 9 0 vectors for your climb
+PUNC: American 1581 turn left heading 2 9 0 vectors for your climb.
+PUNE: American 1581, turn left heading 290, vectors for your climb.
+PUNV: American 1581, turn left heading 290. Vectors for your climb.
+EDIT: The phrase 'two niner zero' could be clarified as '290' for consistency. Confirming the aircraft's acknowledgement might improve communication.
+NOTE:
+    - Speaker: Washington Center Controller (inferred)
+
+    - Listener: American 1581
+
+    - Event: Course correction and climb instruction
+
+    - Actions: Turn left to heading 290; Follow vectors for climb
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: American 1581  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 290  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_03_28 208.840 211.400}
+ORIG: two ninety on the heading american fifteen eighty one
+PROC: two ninety on the heading american fifteen eighty one
+NUMC: 290 on the heading American 1581
+PUNC: 290 on the heading American 1581.
+PUNE: American 1581, heading 290.
+PUNV: 290 on the heading American 1581.
+EDIT: Simplify phrase 'on the heading' to just 'heading 290'. Ensure sentence ends with punctuation for clarity and professionalism.
+NOTE:
+    - Speaker: Air Traffic Controller (ATC) (inferred)
+
+    - Listener: American 1581
+
+    - Event: Issuing heading instruction for climb vectors
+
+    - Actions: Instructing American 1581 to turn to heading 290; Vectors provided for climb
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [x] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [x] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: American 1581  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 290  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL209__00_03_35 215.760 219.700}
+ORIG: delta two zero nine contact dulles approach control one three four point two good day
+PROC: delta two zero nine contact dulles approach control one three four point two good day
+NUMC: Delta 2 0 9 contact dulles approach control 1 3 4.2 good day
+PUNC: Delta 2 0 9 contact dulles approach control 1 3 4.2 good day.
+PUNE: Delta 209, contact Dulles Approach Control 134.2, good day
+PUNV: Delta 209, contact Dulles Approach Control 134.2, good day.
+EDIT: Minor punctuation improvements for clarity: added space before 'contact' and after '134.2'.
+NOTE:
+    - Speaker: Delta 209 (inferred)
+
+    - Listener: Dulles Approach Control
+
+    - Event: Aircraft transitioning to a different controller.
+
+    - Actions: Contacting Dulles Approach Control on frequency 134.2.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [x] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Delta 209  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq: 134.2  # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DAL209__DR1-1__00_03_40 220.260 221.740}
+ORIG: thirty four two so long
+PROC: thirty four two so long
+NUMC: 34 2 so long
+PUNC: 34 2 so long.
+PUNE: Delta 209, goodbye.
+PUNV: 34.2, so long.
+EDIT: Specify the frequency clearly as '34.2' and consider using 'good day' for professionalism.
+NOTE:
+    - Speaker: Delta 209 (inferred)
+
+    - Listener: Dulles Approach Control
+
+    - Event: Aircraft acknowledging handoff to new control
+
+    - Actions: Acknowledgment of frequency change; Termination of communication
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [x] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Delta 209  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq: 134.2  # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__AAL1581__00_04_25 265.030 269.830}
+ORIG: american fifteen eighty one turn left heading two three zero vector ah for your climb
+PROC: american fifteen eighty one turn left heading two three zero vector ah for your climb
+NUMC: American 1581 turn left heading 2 3 0 vector ah for your climb
+PUNC: American 1581 turn left heading 2 3 0 vector ah for your climb.
+PUNE: American 1581, turn left heading 230, vector for your climb
+PUNV: American fifteen eighty one, turn left heading two three zero. Vector for your climb.
+EDIT: The phrase 'heading' is repeated and could be omitted for clarity. Additionally, the term 'ah' should be replaced with a more standard phrase such as 'for your climb.'
+NOTE:
+    - Speaker: Approach Controller (Inferred based on context of vectors and climb instructions typical of approach control.)
+
+    - Listener: American 1581
+
+    - Event: Heading change instruction to vector aircraft for climb.
+
+    - Actions: Turn left to heading 230 degrees, then follow vectors for climb.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: American 1581  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 230  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_04_30 270.720 273.240}
+ORIG: two thirty on the heading american fifteen eighty one
+PROC: two thirty on the heading american fifteen eighty one
+NUMC: 230 on the heading American 1581
+PUNC: 230 on the heading American 1581.
+PUNE: American 1581, two thirty on the heading
+PUNV: 230 on the heading American 1581.
+EDIT: Consider rephrasing to 'American 1581, heading 230.' for clarity and brevity.
+NOTE:
+    - Speaker: American 1581 (aircraft) (inferred)
+
+    - Listener: ATC Controller
+
+    - Event: Aircraft acknowledging and confirming new heading.
+
+    - Actions: Setting heading to 230 degrees as instructed.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [x] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [x] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: American 1581  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 230  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__N99G__DR1-1__00_04_59 299.630 302.550}
+ORIG: hello washington aero star two six nine nine golf three thousand
+PROC: hello washington aerostar two six nine nine golf three thousand
+NUMC: hello Washington aerostar 2 6 9 9 Golf 3000
+PUNC: hello Washington aerostar 2 6 9 9 Golf 3000.
+PUNE: Aerostar 2699G, contact Washington at 3000.
+PUNV: Verified punctuation with improvements
+EDIT: Edit recommendations for better ATC communication
+NOTE:
+    - Speaker: Washington Center or Approach Controller (inferred)
+
+    - Listener: Aerostar 2699G (N99G)
+
+    - Event: Handoff instruction to contact Washington on frequency 3000
+
+    - Actions: Instruction to contact Washington at frequency 3000
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [x] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Aerostar 2699G  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd: 3000  # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__N99G__00_05_05 305.410 309.650}
+ORIG: aero star nine nine golf fly heading three three zero climb and maintain four thousand
+PROC: aerostar nine nine golf fly heading three three zero climb and maintain four thousand
+NUMC: aerostar 9 9 Golf fly heading 3 3 0 climb and maintain 4000
+PUNC: aerostar 9 9 Golf fly heading 3 3 0 climb and maintain 4000.
+PUNE: Aerostar 99G, fly heading 330, climb and maintain 4000.
+PUNV: Verified punctuation with improvements.
+EDIT: Consider rephrasing for brevity: 'Fly heading 330, climb and maintain 4000.'
+NOTE:
+    - Speaker: ATC Controller (Washington) (inferred)
+
+    - Listener: Aerostar 99G
+
+    - Event: Routine traffic advisory instructing altitude and heading change.
+
+    - Actions: {'heading': 330, 'altitude': 4000}
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [x] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Aerostar 99G  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd: 4000  # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 330  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__N99G__DR1-1__00_05_09 309.730 311.460}
+ORIG: three three zero and four thousand
+PROC: three three zero and four thousand
+NUMC: 3 3 0 and 4000
+PUNC: 3 3 0 and 4000.
+PUNE: Aero Star 299G, heading 330 and climb to 4000.
+PUNV: Verified punctuation with improvements: 'Aerostar 99G, fly heading 330, climb and maintain 4000.'
+EDIT: Consider adding explicit instructions like 'maintain' for clarity.
+NOTE:
+    - Speaker: DCA_D1_1 controller (inferred)
+
+    - Listener: Aerostar 99G
+
+    - Event: Reissuing heading and altitude instruction to Aerostar 99G.
+
+    - Actions: Instructing the aircraft to fly heading 330 and maintain altitude at 4000 feet.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [x] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Aero Star 299G  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd: 4000  # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 330  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL743__AIRCRAFT_ON_ANOTHER_FREQUENCY__00_05_11 311.890 315.860}
+ORIG: delta seven forty three washington departure control climb and maintain flight level two three zero
+PROC: delta seven forty three washington departure control climb and maintain flight level two three zero
+NUMC: Delta 743 Washington departure control climb and maintain flight level 2 3 0
+PUNC: Delta 743 Washington departure control climb and maintain flight level 2 3 0.
+PUNE: Delta 743, Washington Departure Control, climb and maintain Flight Level 230.
+PUNV: Verified punctuation with improvements
+EDIT: Edit recommendations for better ATC communication
+NOTE:
+    - Speaker: Washington Departure Control (known)
+
+    - Listener: Delta 743
+
+    - Event: Climb instruction to Flight Level 230
+
+    - Actions: Climb and maintain flight level 230
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [x] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Delta 743  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl: 230  # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__N99G__00_06_34 394.610 398.230}
+ORIG: aero star nine nine golf climb and maintain ah six thousand
+PROC: aerostar nine nine golf climb and maintain ah six thousand
+NUMC: aerostar 9 9 Golf climb and maintain ah 6000
+PUNC: aerostar 9 9 Golf climb and maintain ah 6000.
+PUNE: Aero Star 99G, climb and maintain 6,000.
+PUNV: Aerostar 99G, climb and maintain flight level 6000.
+EDIT: The phraseology could be improved by removing 'ah six thousand' for clarity. Using 'flight level 6000' is more standard in ATC communications.
+NOTE:
+    - Speaker: Washington Departure Control (inferred)
+
+    - Listener: Aerostar 99G
+
+    - Event: Altitude change instruction
+
+    - Actions: Climb to flight level 6000.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Aero Star 99G  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd: 6000  # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__N99G__DR1-1__00_06_38 398.310 399.800}
+ORIG: nine nine golf out of four for six
+PROC: nine nine golf out of four for six
+NUMC: 9 9 Golf out of 4 for 6
+PUNC: 9 9 Golf out of 4 for 6.
+PUNE: N99G, out of 4000 for 6000
+PUNV: Verified punctuation with improvements: 'nine nine golf, climb out of four thousand for six thousand.'
+EDIT: Add 'climb' explicitly to clearly indicate the action and use 'flight level' terminology for precision.
+NOTE:
+    - Speaker: Aero Star 99G (pilot) (inferred from callsign N99G in the message header and previous communications.)
+
+    - Listener: Washington Departure Control
+
+    - Event: Climb instruction from current altitude to new altitude
+
+    - Actions: Climbing from 4,000 feet to 6,000 feet
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [x] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [x] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: N99G  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd: 4000  # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__AAL1581__00_06_41 401.500 406.380}
+ORIG: american fifteen eighty one turn right heading three two zero join j one forty nine resume your own navigation
+PROC: american fifteen eighty one turn right heading three two zero join j one forty nine resume your own navigation
+NUMC: American 1581 turn right heading 3 2 0 join j 149 resume your own navigation
+PUNC: American 1581 turn right heading 3 2 0 join j 149 resume your own navigation.
+PUNE: American 1581, turn right heading 320, join J149, resume your own navigation
+PUNV: American 1581, turn right heading three hundred twenty, join J149, resume your own navigation.
+EDIT: Consider pronouncing 'three two zero' as 'three hundred twenty' for clarity. Additionally, specifying the type of procedure (e.g., approach or STAR) could enhance understanding.
+NOTE:
+    - Speaker: ATC Controller (inferred)
+
+    - Listener: American 1581
+
+    - Event: Vectoring instruction to change heading and join a specific procedure.
+
+    - Actions: Turn right to heading 320 degrees.; Intercept and join J149 procedure.; Resume own navigation upon joining.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: American 1581  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 320  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_06_47 407.450 410.790}
+ORIG: three twenty to join the airway american fifteen eighty one
+PROC: three twenty to join the airway american fifteen eighty one
+NUMC: 320 to join the airway American 1581
+PUNC: 320 to join the airway American 1581.
+PUNE: American 1581, join the airway J149 at 320.
+PUNV: American 1581, join the airway J149 at 320.
+EDIT: No edit recommendations available.
+NOTE:
+    - Speaker: Unknown speaker (Unknown - LLM processing failed)
+
+    - Listener: Unknown listener
+
+    - Event: Unknown event
+
+    - Actions: Unknown actions
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [x] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: American 1581  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__AAL1581__00_06_57 417.450 421.320}
+ORIG: american fifteen eighty one contact dulles approach one three four point two good day
+PROC: american fifteen eighty one contact dulles approach one three four point two good day
+NUMC: American 1581 contact dulles approach 1 3 4.2 good day
+PUNC: American 1581 contact dulles approach 1 3 4.2 good day.
+PUNE: American 1581, contact Dulles Approach 134.2, good day.
+PUNV: American 1581, contact Dulles Approach on frequency 134.2. Good day.
+EDIT: The phrase could be slightly improved by adding the word 'frequency' after 'on' for clarity: 'contact Dulles Approach on frequency 134.2.'
+NOTE:
+    - Speaker: Dulles Approach Controller (DR1) (inferred)
+
+    - Listener: American Airlines flight 1581
+
+    - Event: Handoff instruction to contact another controller.
+
+    - Actions: American 1581 is instructed to contact Dulles Approach on frequency 134.2.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [x] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: American 1581  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq: 134.2  # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_07_01 421.680 423.860}
+ORIG: one thirty four two american fifteen eighty one so long
+PROC: one thirty four two american fifteen eighty one so long
+NUMC: 134 2 American 1581 so long
+PUNC: 134 2 American 1581 so long.
+PUNE: American 1581, good day, 134.2
+PUNV: American 1581, contact Dulles Approach on frequency 134.2, good day.
+EDIT: The phrase 'so long' appears to be a mishearing; it's likely part of the frequency instruction or an error in transcription and should be clarified for better understanding.
+NOTE:
+    - Speaker: Washington Center Controller (inferred)
+
+    - Listener: American 1581
+
+    - Event: Handoff to Dulles Approach
+
+    - Actions: Instructing American 1581 to contact Dulles Approach on frequency 134.2.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [x] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [x] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: American 1581  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq: 134.2  # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL743__00_07_52 472.510 479.550}
+ORIG: delta seven forty three proceed direct linden resume your own navigation contact ah the washington center one two zero point six five
+PROC: delta seven forty three proceed direct linden resume your own navigation contact ah the washington center one two zero point six five
+NUMC: Delta 743 proceed direct linden resume your own navigation contact ah the Washington center 1 2 0.6 5
+PUNC: Delta 743 proceed direct linden resume your own navigation contact ah the Washington center 1 2 0.6 5.
+PUNE: Delta 743, proceed direct Linden, resume your own navigation, contact Washington Center 120.65.
+PUNV: Delta 209, contact Potomac Approach on 119.2 MHz, good day.
+EDIT: The frequency '119.2' could be more clearly written as '119.2 MHz' for explicitness. Additionally, ensuring the use of standard phraseology like 'contact Potomac Approach on 119.2 MHz' is already correctly used here.
+NOTE:
+    - Speaker: Washington Center Controller (inferred)
+
+    - Listener: Delta 209
+
+    - Event: Handoff to Potomac Approach
+
+    - Actions: Instructing Delta 209 to contact Potomac Approach on frequency 119.2 MHz; Ending communication with Delta 209
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Delta 743  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq: 120.65  # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__N99G__00_08_19 499.410 505.640}
+ORIG: aero star nine nine golf turn left heading two seven zero contact dulles approach one two six point six five expect vectors casanova
+PROC: aerostar nine nine golf turn left heading two seven zero contact dulles approach one two six point six five expect vectors casanova
+NUMC: aerostar 9 9 Golf turn left heading 2 7 0 contact dulles approach 1 2 6.6 5 expect vectors casanova
+PUNC: aerostar 9 9 Golf turn left heading 2 7 0 contact dulles approach 1 2 6.6 5 expect vectors casanova.
+PUNE: Aerostar 99G, turn left heading 270, contact Dulles Approach 126.65, expect vectors Casanova
+PUNV: Aerostar nine nine golf, turn left heading two seven zero, descend and maintain four thousand, contact departure on one two eight point six five.
+EDIT: {'reorder_instructions': "Consider reordering instructions for clarity: 'Descend and maintain four thousand, turn left heading two seven zero.'", 'remove_redundant_contact': "Remove redundant 'contact' instruction if already implied."}
+NOTE:
+    - Speaker: Approach Controller (inferred)
+
+    - Listener: Aerostar 99G
+
+    - Event: Aircraft being vectored for approach and instructed to contact departure control.
+
+    - Actions: {'heading_change': 'Turn left to heading 270', 'descent_instruction': 'Descend to 4,000 feet', 'frequency_change': 'Contact departure on 128.65 MHz'}
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [x] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Aerostar 99G  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 270  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq: 126.65  # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__N99G__DR1-1__LONG_PAUSE_OF_MORE_THAN_SEVEN_MINUTES__00_08_26 506.230 508.310}
+ORIG: one two six six five and two seven zero
+PROC: one two six six five and two seven zero
+NUMC: 1 2 6 6 5 and 2 7 0
+PUNC: 1 2 6 6 5 and 2 7 0.
+PUNE: Aero Star 99G, frequency 126.65 and heading 270.
+PUNV: Verified punctuation with improvements
+EDIT: Edit recommendations for better ATC communication
+NOTE:
+    - Speaker: Aero Star 99G (pilot) (inferred)
+
+    - Listener: Dulles Approach controller
+
+    - Event: Acknowledgment of heading and frequency change
+
+    - Actions: Confirming new heading (270) and contact frequency (126.65)
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [x] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: Aero Star 99G  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd:   # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng: 270  # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq: 126.65  # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__USA237__DR1-1__00_16_55 1015.640 1019.710}
+ORIG: good afternoon washington u s air two thirty seven is out of one thousand five hundred for five thousand
+PROC: good afternoon washington u_s_air two thirty seven is out of one thousand five hundred for five thousand
+NUMC: good afternoon Washington USAir 237 is out of 1500 for 5000
+PUNC: good afternoon Washington USAir 237 is out of 1500 for 5000.
+PUNE: Good afternoon Washington, USAir 237 is out of 1,500 for 5,000.
+PUNV: Good afternoon, Washington. USAir 237 is out of 1,500 climbing to 3,000.
+EDIT: {'callsign_standardization': "Use standardized callsign format for clarity (e.g., 'USAir 237' instead of 'u s air two thirty seven').", 'number_formatting': "Ensure proper formatting of numbers in communications (e.g., '1,500' and '3,000')."}
+NOTE:
+    - Speaker: Washington Center Controller (inferred)
+
+    - Listener: USAir 237
+
+    - Event: Departure and climb instruction update
+
+    - Actions: Informing the aircraft of its current altitude and climb status.; Updating the flight progress with new altitude information.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [x] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [x] "ASC": ATC starts contact to pilot.
+        - [] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: USAir 237  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd: 1500  # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__USA237__00_17_00 1020.060 1024.339}
+ORIG: u s air two thirty seven washington departure radar contact climb and maintain one five thousand
+PROC: u_s_air two thirty seven washington departure radar contact climb and maintain one five thousand
+NUMC: USAir 237 Washington departure radar contact climb and maintain 1 5000
+PUNC: USAir 237 Washington departure radar contact climb and maintain 1 5000.
+PUNE: USAir 237, Washington departure, radar contact, climb and maintain 15,000.
+PUNV: Good afternoon Washington, USAir 237 is out of 1,500 for 5,000.
+EDIT: Consider using 'climbing to' instead of 'for' and standardize altitude expressions (e.g., 'thirteen hundred').
+NOTE:
+    - Speaker: Washington Center Controller (inferred)
+
+    - Listener: USAir 237
+
+    - Event: Altitude climb from 1,500 to 5,000 feet.
+
+    - Actions: Reporting current altitude of 1,500 feet.; Requesting climb to 5,000 feet.
+
+    - Intention:
+        - [] "PSC": Pilot starts contact to ATC.
+        - [] "PSR": Pilot starts contact to ATC with reported info.
+        - [] "PRP": Pilot reports information.
+        - [] "PRQ": Pilot issues requests.
+        - [] "PRB": Pilot readback.
+        - [] "PAC": Pilot acknowledge.
+        - [x] "ASC": ATC starts contact to pilot.
+        - [x] "AGI": ATC gives instruction.
+        - [] "ACR": ATC corrects pilot's readback.
+        - [] "END": Either party signaling the end of exchange.
+
+    - Number1:
+        - Csgn: USAir 237  # Aircraft Callsign
+        - Rway:   # Runway Number
+        - Altd: 15,000  # Altitude (feet MSL)
+        - FLvl:   # Flight Level (FLxxx)
+        - Hdng:   # Heading (degrees)
+        - VORr:   # VOR Radial Direction
+        - Freq:   # Frequency (e.g., 118.7)
+        - ASpd:   # Airspeed (knots)
+        - Dist:   # Distance (nautical miles)
+        - Squk:   # Transponder Code (Squawk)
+        - TZlu:   # Standard Time (Zulu)
+        - Amtr:   # Altimeter Setting
+        - Wdir:   # Wind Direction
+        - Wspd:   # Wind Speed (knots)
+        - Tmpr:   # Temperature (°C)
+        - DewP:   # Dew Point (°C)

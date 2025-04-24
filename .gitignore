@@ -1,0 +1,7 @@
+**/atc_llama
+**/atc_llama_merged
+**/results
+**/unsloth_compiled_cache
+**/.ruff_cache
+**/__pycache__
+**/.venv

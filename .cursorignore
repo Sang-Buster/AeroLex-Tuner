@@ -1,0 +1,13 @@
+# Add directories or file patterns to ignore during indexing (e.g. foo/ or *.csv)
+.venv
+.git
+.gitignore
+.cursorignore
+.cursorrules
+.cursorconfig
+atc_llama/
+data/
+results/
+unsloth_compiled_cache
+__pycache__
+llama.cpp/
