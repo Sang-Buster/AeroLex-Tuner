@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+# ruff: noqa: I001
+# #!/usr/bin/env python3
 """
 finetune.py - Prepares ATC data and fine-tunes Llama3.2-3b model with Unsloth.
 
@@ -12,16 +13,9 @@ This script:
 import argparse
 import json
 import os
+import sys
 
 import pandas as pd
-import torch
-from datasets import Dataset
-from unsloth import FastLanguageModel, UnslothTrainingArguments, is_bfloat16_supported
-from transformers import DataCollatorForSeq2Seq, Trainer # isort: off
-
-# uv v -p 3.10
-# source .venv/bin/activate
-# uv pip install pandas datasets unsloth setuptools torch transformers peft
 
 # Arguments
 parser = argparse.ArgumentParser(
@@ -55,6 +49,16 @@ parser.add_argument(
     help="Model name to fine-tune (default: meta-llama/Llama-3.2-3B-Instruct)",
 )
 parser.add_argument(
+    "--offline",
+    action="store_true",
+    help="Use local model files (model-name points to a local directory)",
+)
+parser.add_argument(
+    "--download",
+    metavar="MODEL",
+    help="Download a Hugging Face model to use locally (will exit after download)",
+)
+parser.add_argument(
     "--output-dir",
     default="./atc_llama",
     help="Output directory for the fine-tuned model/adapters (default: ./atc_llama)",
@@ -84,7 +88,54 @@ parser.add_argument(
     action="store_true",
     help="Load the model in 8-bit precision (alternative to 4-bit)",
 )
+
+# Check if help flag is requested before importing Unsloth
+if "-h" in sys.argv or "--help" in sys.argv:
+    args = parser.parse_args()
+    sys.exit(0)
+
 args = parser.parse_args()
+
+# Handle model download if requested
+if args.download:
+    print(f"Downloading model: {args.download}")
+    # Import required libraries only when needed
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+
+    # Create download directory based on model name
+    download_dir = os.path.join("models", args.download.split("/")[-1])
+    os.makedirs(download_dir, exist_ok=True)
+
+    print(f"Downloading to {download_dir}...")
+    try:
+        # Download and save model and tokenizer
+        tokenizer = AutoTokenizer.from_pretrained(args.download)
+        model = AutoModelForCausalLM.from_pretrained(args.download)
+
+        tokenizer.save_pretrained(download_dir)
+        model.save_pretrained(download_dir)
+
+        print(f"Model downloaded successfully to {download_dir}")
+        print(f"To use this model, run with: --model-name {download_dir} --offline")
+        sys.exit(0)
+    except Exception as e:
+        print(f"Error downloading model: {e}")
+        sys.exit(1)
+
+# Import Unsloth and other libraries after help check
+import torch  # noqa: E402
+from datasets import Dataset  # noqa: E402
+from unsloth import (  # noqa: E402
+    FastLanguageModel,
+    UnslothTrainingArguments,
+    is_bfloat16_supported,
+)
+from transformers import DataCollatorForSeq2Seq, Trainer  # noqa: E402
+
+
+# uv v -p 3.10
+# source .venv/bin/activate
+# uv pip install pandas datasets unsloth setuptools torch transformers peft
 
 
 def prepare_data(input_file):
@@ -207,6 +258,7 @@ def fine_tune_model(data_df):
         max_seq_length=args.max_seq_length,
         load_in_4bit=load_in_4bit,
         load_in_8bit=load_in_8bit,
+        local_files_only=args.offline,  # Enable offline mode
     )
 
     # If we're not doing full fine-tuning, set up LoRA
@@ -391,6 +443,400 @@ def fine_tune_model(data_df):
     return output_dir
 
 
+def create_readme_template(output_dir, model_name, is_adapter=True, training_args=None):
+    """Create a detailed README.md file for the fine-tuned model/adapter with YAML metadata."""
+    model_id = model_name
+    # If model_name points to a local directory, use default model ID
+    if (
+        os.path.exists(model_name)
+        or model_name.startswith("./")
+        or model_name.startswith("models/")
+    ):
+        model_id = "meta-llama/Llama-3.2-3B-Instruct"
+
+    # Get model type from base name
+    model_type = "llama"
+    if "llama" in model_id.lower():
+        model_type = "llama"
+    elif "mistral" in model_id.lower():
+        model_type = "mistral"
+    elif "gemma" in model_id.lower():
+        model_type = "gemma"
+    elif "qwen" in model_id.lower():
+        model_type = "qwen"
+
+    # Get model size if available
+    model_size = "3B"
+    if "3b" in model_id.lower():
+        model_size = "3B"
+    elif "7b" in model_id.lower():
+        model_size = "7B"
+    elif "8b" in model_id.lower():
+        model_size = "8B"
+    elif "13b" in model_id.lower():
+        model_size = "13B"
+    elif "34b" in model_id.lower():
+        model_size = "34B"
+    elif "70b" in model_id.lower():
+        model_size = "70B"
+
+    # Get hyperparameters for training section
+    rank = getattr(args, "rank", 16)
+    alpha = getattr(args, "alpha", 16)
+    learning_rate = getattr(args, "learning_rate", 2e-4)
+    batch_size = getattr(args, "batch_size", 4)
+    gradient_accumulation_steps = getattr(args, "gradient_accumulation_steps", 4)
+    epochs = getattr(args, "epochs", 3)
+    warmup_ratio = getattr(args, "warmup_ratio", 0.03)
+    max_seq_length = getattr(args, "max_seq_length", 2048)
+
+    if is_adapter:
+        # Create the YAML metadata and README content for the adapter
+        readme_content = f"""---
+license: llama3.2
+language:
+- en
+base_model:
+- {model_id}
+pipeline_tag: text-generation
+tags:
+- Speech Recognition
+- ATC
+- PEFT
+- LoRA
+- Unsloth
+---
+
+# ATC Communication Expert Model (LoRA Adapters)
+
+A specialized set of LoRA adapters fine-tuned for improving and analyzing Air Traffic Control (ATC) communications, extracting relevant information from raw transcripts.
+
+## Model Details
+
+### Model Description
+
+These adapters fine-tune the {model_id} model to specialize in processing Air Traffic Control communications. When applied to the base model, it can:
+
+- Improve raw ATC transcripts with proper punctuation and formatting
+- Identify communication intentions (pilot requests, ATC instructions, etc.)
+- Extract key information such as flight numbers, altitudes, headings, and other numerical data
+- Analyze speaker roles and communication patterns
+
+The adapters were created using LoRA (Low-Rank Adaptation) with PEFT (Parameter-Efficient Fine-Tuning) techniques to efficiently adapt the {model_type.title()} {model_size} model to this specialized domain.
+
+- **Developed by:** ATC NLP Team
+- **Model type:** LoRA adapters for {model_id}
+- **Language(s):** English, specialized for ATC terminology
+- **License:** Same as the base model
+- **Finetuned from model:** {model_id}
+
+## Uses
+
+### Direct Use
+
+These adapters are intended for:
+- Transcribing and formatting raw ATC communications
+- Training ATC communication skills
+- Analyzing ATC communication patterns
+- Extracting structured data from ATC communications
+- Educational purposes for those learning ATC communication protocols
+
+### Downstream Use
+
+The model can be integrated into:
+- Air traffic management training systems
+- Communication analysis tools
+- ATC transcript post-processing pipelines
+- Aviation safety monitoring systems
+- Radio communication enhancement systems
+
+### Out-of-Scope Use
+
+This model is not suitable for:
+- Real-time ATC operations or safety-critical decision-making
+- Full language translation (it's specialized for ATC terminology only)
+- General language processing outside the ATC domain
+- Any application where model errors could impact flight safety
+
+## Bias, Risks, and Limitations
+
+- The model is specialized for ATC communications and may not perform well on general text
+- It may have limitations with accents or non-standard ATC phraseology
+- Performance depends on audio transcription quality for real-world applications
+- Not intended for safety-critical applications without human verification
+- May have biases based on the training data distribution
+
+### Recommendations
+
+- Always have human verification for safety-critical applications
+- Use in conjunction with standard ATC protocols, not as a replacement
+- Provide clear domain context for optimal performance
+- Test thoroughly with diverse ATC communications before deployment
+- Consider fine-tuning further on your specific ATC subdomain if needed
+
+## How to Get Started with the Model
+
+```python
+from peft import PeftModel
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+# Load the base model
+base_model = AutoModelForCausalLM.from_pretrained(
+    "{model_id}",
+    torch_dtype="auto",
+    device_map="auto"
+)
+tokenizer = AutoTokenizer.from_pretrained("{model_id}")
+
+# Load the adapter
+model = PeftModel.from_pretrained(base_model, "{os.path.basename(output_dir)}")
+
+# Process an ATC message
+instruction = "As an ATC communication expert, improve this transcript and analyze its intentions and data."
+message = "southwest five niner two turn left heading three four zero descend and maintain flight level two five zero"
+
+prompt = f"<|begin_of_text|><|header_start|>user<|header_end|>\\n\\n{{instruction}}\\n\\nOriginal: {{message}}<|eot|><|header_start|>assistant<|header_end|>\\n\\n"
+inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+
+# Generate improved transcript and analysis
+outputs = model.generate(**inputs, max_new_tokens=512, do_sample=False)
+response = tokenizer.decode(outputs[0, inputs["input_ids"].shape[1]:], skip_special_tokens=True)
+print(response)
+```
+
+## Training Details
+
+### Training Data
+
+The model was trained on a dataset of ATC communications with:
+- Original raw transcripts
+- Properly punctuated and formatted versions
+- Annotated intentions (PSC, PSR, PRP, PRQ, PRB, PAC, ASC, AGI, ACR, END)
+- Extracted numerical data (altitudes, headings, flight numbers, etc.)
+- Speaker and listener information
+
+### Training Procedure
+
+The model was fine-tuned using LoRA with the following approach:
+- Parameter-efficient fine-tuning using PEFT
+- LoRA applied to key attention layers (q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj)
+- Optimized with Unsloth for efficiency
+
+#### Training Hyperparameters
+
+- **Base model:** {model_id}
+- **LoRA rank:** {rank}
+- **LoRA alpha:** {alpha}
+- **Learning rate:** {learning_rate}
+- **Batch size:** {batch_size}
+- **Gradient accumulation steps:** {gradient_accumulation_steps}
+- **Epochs:** {epochs}
+- **Warmup ratio:** {warmup_ratio}
+- **Max sequence length:** {max_seq_length}
+- **Training regime:** BF16 mixed precision where available, FP16 otherwise
+- **Optimizer:** AdamW 8-bit
+
+## Evaluation
+
+### Testing
+
+The adapters should be tested on diverse ATC communications, including:
+- Clearances and instructions
+- Pilot requests and reports
+- Emergency communications
+- Different accents and speaking patterns
+
+## Technical Specifications
+
+### Model Architecture and Objective
+
+- **Base architecture:** {model_id}
+- **Fine-tuning method:** LoRA with PEFT
+- **Optimization library:** Unsloth
+- **Training objective:** Improving and analyzing ATC communications
+
+### Compute Infrastructure
+
+- **Framework versions:**
+  - PEFT (compatible with the base model)
+  - Unsloth (for efficient LoRA fine-tuning)
+  - Transformers (compatible with the base model)
+  - PyTorch (with BF16 support where available)
+"""
+    else:
+        # For full fine-tuned models
+        readme_content = f"""---
+license: llama3.2
+language:
+- en
+base_model:
+- {model_id}
+pipeline_tag: text-generation
+tags:
+- Speech Recognition
+- ATC
+- Unsloth
+---
+
+# ATC Communication Expert Model (Full Fine-tuned)
+
+A fully fine-tuned model specialized in improving and analyzing Air Traffic Control (ATC) communications, extracting relevant information from raw transcripts.
+
+## Model Details
+
+### Model Description
+
+This model is a fully fine-tuned version of {model_id} optimized for processing Air Traffic Control communications. It can:
+
+- Improve raw ATC transcripts with proper punctuation and formatting
+- Identify communication intentions (pilot requests, ATC instructions, etc.)
+- Extract key information such as flight numbers, altitudes, headings, and other numerical data
+- Analyze speaker roles and communication patterns
+
+The model underwent complete fine-tuning to adapt the {model_type.title()} {model_size} model to this specialized domain.
+
+- **Developed by:** ATC NLP Team
+- **Model type:** Fully fine-tuned {model_type.title()} {model_size}
+- **Language(s):** English, specialized for ATC terminology
+- **License:** Same as the base model
+- **Finetuned from model:** {model_id}
+
+## Uses
+
+### Direct Use
+
+This model is intended for:
+- Transcribing and formatting raw ATC communications
+- Training ATC communication skills
+- Analyzing ATC communication patterns
+- Extracting structured data from ATC communications
+- Educational purposes for those learning ATC communication protocols
+
+### Downstream Use
+
+The model can be integrated into:
+- Air traffic management training systems
+- Communication analysis tools
+- ATC transcript post-processing pipelines
+- Aviation safety monitoring systems
+- Radio communication enhancement systems
+
+### Out-of-Scope Use
+
+This model is not suitable for:
+- Real-time ATC operations or safety-critical decision-making
+- Full language translation (it's specialized for ATC terminology only)
+- General language processing outside the ATC domain
+- Any application where model errors could impact flight safety
+
+## Bias, Risks, and Limitations
+
+- The model is specialized for ATC communications and may not perform well on general text
+- It may have limitations with accents or non-standard ATC phraseology
+- Performance depends on audio transcription quality for real-world applications
+- Not intended for safety-critical applications without human verification
+- May have biases based on the training data distribution
+
+### Recommendations
+
+- Always have human verification for safety-critical applications
+- Use in conjunction with standard ATC protocols, not as a replacement
+- Provide clear domain context for optimal performance
+- Test thoroughly with diverse ATC communications before deployment
+- Consider fine-tuning further on your specific ATC subdomain if needed
+
+## How to Get Started with the Model
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+# Load the model and tokenizer
+model = AutoModelForCausalLM.from_pretrained(
+    "{os.path.basename(output_dir)}",
+    torch_dtype="auto",
+    device_map="auto"
+)
+tokenizer = AutoTokenizer.from_pretrained("{os.path.basename(output_dir)}")
+
+# Process an ATC message
+instruction = "As an ATC communication expert, improve this transcript and analyze its intentions and data."
+message = "southwest five niner two turn left heading three four zero descend and maintain flight level two five zero"
+
+prompt = f"<|begin_of_text|><|header_start|>user<|header_end|>\\n\\n{{instruction}}\\n\\nOriginal: {{message}}<|eot|><|header_start|>assistant<|header_end|>\\n\\n"
+inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+
+# Generate improved transcript and analysis
+outputs = model.generate(**inputs, max_new_tokens=512, do_sample=False)
+response = tokenizer.decode(outputs[0, inputs["input_ids"].shape[1]:], skip_special_tokens=True)
+print(response)
+```
+
+## Training Details
+
+### Training Data
+
+The model was trained on a dataset of ATC communications with:
+- Original raw transcripts
+- Properly punctuated and formatted versions
+- Annotated intentions (PSC, PSR, PRP, PRQ, PRB, PAC, ASC, AGI, ACR, END)
+- Extracted numerical data (altitudes, headings, flight numbers, etc.)
+- Speaker and listener information
+
+### Training Procedure
+
+The model was fully fine-tuned with the following approach:
+- Complete parameter fine-tuning
+- Optimized with Unsloth for efficiency
+- Gradient checkpointing for memory efficiency
+
+#### Training Hyperparameters
+
+- **Base model:** {model_id}
+- **Learning rate:** {learning_rate}
+- **Batch size:** {batch_size}
+- **Gradient accumulation steps:** {gradient_accumulation_steps}
+- **Epochs:** {epochs}
+- **Warmup ratio:** {warmup_ratio}
+- **Max sequence length:** {max_seq_length}
+- **Training regime:** BF16 mixed precision where available, FP16 otherwise
+- **Optimizer:** AdamW 8-bit
+
+## Evaluation
+
+### Testing
+
+The model should be tested on diverse ATC communications, including:
+- Clearances and instructions
+- Pilot requests and reports
+- Emergency communications
+- Different accents and speaking patterns
+
+## Technical Specifications
+
+### Model Architecture and Objective
+
+- **Base architecture:** {model_id}
+- **Fine-tuning method:** Full parameter fine-tuning
+- **Optimization library:** Unsloth
+- **Training objective:** Improving and analyzing ATC communications
+
+### Compute Infrastructure
+
+- **Framework versions:**
+  - Unsloth (for efficient fine-tuning)
+  - Transformers (compatible with the base model)
+  - PyTorch (with BF16 support where available)
+"""
+
+    # Write the README.md file
+    readme_path = os.path.join(output_dir, "README.md")
+    with open(readme_path, "w") as f:
+        f.write(readme_content)
+
+    print(f"Created detailed README.md in {output_dir}")
+    return readme_path
+
+
 def main():
     """Main script execution."""
 
@@ -399,6 +845,9 @@ def main():
 
     # Fine-tune the model
     model_dir = fine_tune_model(data_df)
+
+    # Create README.md for the fine-tuned model/adapters
+    create_readme_template(model_dir, args.model_name, not args.full_finetune)
 
     print(f"Fine-tuning completed successfully. Model/adapters saved to {model_dir}")
 

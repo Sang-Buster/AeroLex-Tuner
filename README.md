@@ -14,19 +14,40 @@ This repository contains scripts for fine-tuning, testing, and uploading a Llama
   - torch
   - huggingface-hub
   - setuptools
+  - peft (for LoRA adapters)
+  - bitsandbytes (for quantization)
+
 Install the required packages:
 
 ```bash
 uv v -p 3.10
 source .venv/bin/activate
-uv pip install pandas datasets unsloth transformers torch huggingface-hub setuptools
+uv pip install pandas datasets unsloth transformers torch huggingface-hub setuptools peft bitsandbytes
 ```
 
 ## Files
 
 - `finetune.py`: Script for fine-tuning the model
+- `finetune_merge_adapters.py`: Script for merging trained LoRA adapters with base model
 - `finetune_test.py`: Script for testing the fine-tuned model
-- `finetune_upload.py`: Script for uploading the model to Hugging Face and/or converting to GGUF for Ollama
+- `finetune_upload_to_hf.py`: Script for uploading models/adapters to Hugging Face Hub
+
+## Downloading Models for Offline Use
+
+Scripts also includes a `--download` option to download models for offline use:
+
+```bash
+# Download a model for fine-tuning
+python finetune.py --download meta-llama/Llama-3.2-3B-Instruct
+
+# Download a model for merging with adapters
+python finetune_merge_adapters.py --download meta-llama/Llama-3.2-3B-Instruct
+
+# Download a model for testing
+python finetune_test.py --download meta-llama/Llama-3.2-3B-Instruct
+```
+
+After downloading, models will be stored in a `models/` directory, and you can use them with the `--offline` flag.
 
 ## Fine-Tuning
 
@@ -36,6 +57,13 @@ The `finetune.py` script fine-tunes a Llama 3.2 model on ATC communications data
 
 ```bash
 python finetune.py --input-file data/test_llama_70b_punv.json
+```
+
+### Offline Mode Usage
+
+```bash
+# Use a downloaded model for fine-tuning
+python finetune.py --input-file data/atc_data.json --model-name models/Llama-3.2-3B-Instruct --offline
 ```
 
 ### Advanced Options
@@ -52,9 +80,7 @@ python finetune.py \
   --alpha 16 \
   --max-seq-length 4096 \
   --gradient-accumulation-steps 4 \
-  --warmup-ratio 0.05 \
-  --save-to-gguf \
-  --quant-method q4_k_m
+  --warmup-ratio 0.05
 ```
 
 ### Parameter Explanation
@@ -67,92 +93,159 @@ python finetune.py \
 - `--alpha`: LoRA alpha (default: 16)
 - `--max-seq-length`: Maximum sequence length (default: 2048)
 - `--model-name`: Model name to fine-tune (default: `meta-llama/Llama-3.2-3B-Instruct`)
+- `--offline`: Use local model files (model-name points to a local directory)
+- `--download`: Download a Hugging Face model to use locally
 - `--output-dir`: Output directory for the fine-tuned model (default: `./atc_llama`)
 - `--gradient-accumulation-steps`: Gradient accumulation steps (default: 4)
 - `--warmup-ratio`: Warmup ratio (default: 0.03)
 - `--max-steps`: Maximum number of training steps (default: None)
-- `--save-to-gguf`: Save the model to GGUF format for Ollama compatibility
-- `--quant-method`: Quantization method for GGUF conversion (default: `q4_k_m`)
 - `--full-finetune`: Perform full fine-tuning instead of LoRA (requires more VRAM)
 - `--load-in-8bit`: Load the model in 8-bit precision (alternative to 4-bit)
+
+## Merging LoRA Adapters with Base Model
+
+Use the `finetune_merge_adapters.py` script to merge fine-tuned LoRA adapters with the base model:
+
+```bash
+python finetune_merge_adapters.py --adapter-dir ./atc_llama --output-dir ./atc_llama_merged
+```
+
+### Offline Mode Usage
+
+```bash
+python finetune_merge_adapters.py \
+  --adapter-dir ./atc_llama \
+  --base-model-name models/Llama-3.2-3B-Instruct \
+  --output-dir ./atc_llama_merged \
+  --offline
+```
+
+### Merge Parameters
+
+- `--adapter-dir`: Input directory with fine-tuned LoRA adapters (default: `./atc_llama`)
+- `--base-model-name`: Base model name used for fine-tuning (default: `meta-llama/Llama-3.2-3B-Instruct`)
+- `--offline`: Use local model files (base-model-name points to a local directory)
+- `--download`: Download a Hugging Face model to use locally
+- `--output-dir`: Output directory for the merged model (default: `./atc_llama_merged`)
 
 ## Testing the Model
 
 Use the `finetune_test.py` script to test your fine-tuned model:
 
 ```bash
-python finetune_test.py --model-path ./atc_llama
+python finetune_test.py --model-dir ./atc_llama_merged
+```
+
+### Offline Mode Usage
+
+```bash
+python finetune_test.py --model-dir ./atc_llama_merged --offline
+```
+
+### Multi-GPU and Device Control
+
+```bash
+# Use a specific GPU
+python finetune_test.py --model-dir ./atc_llama_merged --device cuda:1
+
+# Split large models across available GPUs
+python finetune_test.py --model-dir ./atc_llama_merged --split-across-gpus
 ```
 
 ### Advanced Testing Options
 
 ```bash
 python finetune_test.py \
-  --model-path ./my_atc_model \
+  --model-dir ./my_atc_model \
+  --base-model-name meta-llama/Llama-3.2-3B-Instruct \
   --load-in-8bit \
-  --max-new-tokens 1024 \
-  --temperature 0.8 \
-  --top-p 0.9 \
-  --test-case 2
+  --test-inputs "delta six three eight traffic alert" "southwest five niner two turn left"
 ```
 
 ### Testing Parameters
 
-- `--model-path`: Path to the fine-tuned model (default: `./atc_llama`)
-- `--load-in-4bit`: Load model in 4-bit precision (default: True)
-- `--load-in-8bit`: Load model in 8-bit precision (overrides 4-bit if specified)
-- `--max-new-tokens`: Maximum number of tokens to generate (default: 512)
-- `--temperature`: Temperature for generation (default: 0.7)
-- `--top-p`: Top-p sampling parameter (default: 0.95)
-- `--test-case`: Test case to use (0: default, 1-3: additional test cases) (default: 0)
+- `--model-dir`: Directory containing the fine-tuned model or adapters (default: `./atc_llama_merged`)
+- `--base-model-name`: Base model name (required if loading adapters, ignored for merged models)
+- `--max-seq-length`: Maximum sequence length (default: 2048)
+- `--load-in-4bit`: Load model in 4-bit precision (default behavior with Unsloth)
+- `--load-in-8bit`: Load model in 8-bit precision (alternative to 4-bit)
+- `--offline`: Use local model files (model-dir and base-model-name point to local directories)
+- `--download`: Download a Hugging Face model to use locally
+- `--device`: Device to run the model on (e.g., 'cuda:0', 'cuda:1', 'cpu')
+- `--split-across-gpus`: Split model across multiple GPUs if it's too large for a single GPU
+- `--test-inputs`: List of test inputs to process
 
-## Uploading and Converting
+## Uploading to Hugging Face Hub
 
-The `finetune_upload.py` script can upload your model to Hugging Face and/or convert it to GGUF format for use with Ollama.
+Use the `finetune_upload_to_hf.py` script to upload your models or adapters to the Hugging Face Hub. Both the fine-tuning and merging scripts automatically generate comprehensive model cards (README.md files) that work with Hugging Face Hub.
 
-### Uploading to Hugging Face
+### Uploading Adapters
 
 ```bash
-python finetune_upload.py --model-path ./atc_llama --repo-id your-username/atc-llama
+python finetune_upload_to_hf.py --model-dir ./atc_llama --repo-id username/atc-llama-adapters
 ```
 
-### Converting to GGUF and Creating an Ollama Model
+### Uploading Merged Model
 
 ```bash
-python finetune_upload.py \
-  --model-path ./atc_llama \
-  --repo-id local \
-  --convert-to-gguf \
-  --quant-method q4_k_m \
-  --create-modelfile \
-  --ollama-model-name atc-llama \
-  --create-ollama-model
+python finetune_upload_to_hf.py --model-dir ./atc_llama_merged --repo-id username/atc-llama
+```
+
+### Advanced Upload Options
+
+```bash
+python finetune_upload_to_hf.py \
+  --model-dir ./atc_llama \
+  --repo-id username/atc-llama-adapters \
+  --base-model-id meta-llama/Llama-3.2-3B-Instruct \
+  --private
 ```
 
 ### Upload Parameters
 
-- `--model-path`: Path to the fine-tuned model (default: `./atc_llama`)
-- `--repo-id`: Hugging Face repository ID (e.g., `username/model-name`) or `local` to skip HF upload
-- `--token`: Hugging Face API token (or set `HF_TOKEN` environment variable)
-- `--convert-to-gguf`: Convert the model to GGUF format before uploading
-- `--quant-method`: Quantization method for GGUF conversion (default: `q4_k_m`)
-- `--create-modelfile`: Create an Ollama-compatible Modelfile
-- `--ollama-model-name`: Name for the Ollama model (default: `atc-llama`)
-- `--create-ollama-model`: Create the Ollama model after preparing the files (requires Ollama to be installed)
+- `--model-dir`: Path to the local directory containing the model/adapter files
+- `--repo-id`: Hugging Face Hub repository ID (e.g., username/model-name)
+- `--repo-type`: Type of repository on the Hub (default: model)
+- `--commit-message`: Commit message for the upload
+- `--token`: Hugging Face API token (optional, uses login cache if not provided)
+- `--private`: Create a private repository
+- `--base-model-id`: Hugging Face model ID for the base model (for adapters)
 
-## Using with Ollama
+## Automatically Generated Model Cards
 
-After creating the Ollama model, you can run it with:
+All models and adapters automatically include comprehensive model cards (README.md files) that include:
 
-```bash
-ollama run atc-llama
+### YAML Metadata for Hugging Face Hub
+```yaml
+---
+license: llama3.2
+language:
+- en
+base_model:
+- meta-llama/Llama-3.2-3B-Instruct
+pipeline_tag: text-generation
+tags:
+- Speech Recognition
+- ATC
+- PEFT
+- LoRA
+---
 ```
 
-Or if you uploaded to Hugging Face:
+### Detailed Sections
+- Model description and capabilities
+- Direct and downstream uses
+- Limitations and recommendations
+- Usage examples with code
+- Training details and hyperparameters
+- Technical specifications
 
-```bash
-ollama run hf.co/your-username/atc-llama
-```
+These model cards are automatically generated when you:
+
+1. Run fine-tuning (`finetune.py`)
+2. Merge adapters (`finetune_merge_adapters.py`)
+
+The upload script (`finetune_upload_to_hf.py`) will automatically handle fixing any paths in adapter configs to ensure compatibility with Hugging Face Hub.
 
 ## Data Format
 
@@ -193,5 +286,4 @@ The input data should be a JSON file with the following structure:
 ## Acknowledgments
 
 - This project uses the [Unsloth](https://github.com/unslothai/unsloth) framework for efficient fine-tuning
-- The GGUF conversion uses [llama.cpp](https://github.com/ggerganov/llama.cpp) tools
 - Models are hosted on [Hugging Face](https://huggingface.co/) 
