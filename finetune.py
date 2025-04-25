@@ -16,8 +16,8 @@ import os
 import pandas as pd
 import torch
 from datasets import Dataset
-from transformers import DataCollatorForSeq2Seq, Trainer
 from unsloth import FastLanguageModel, UnslothTrainingArguments, is_bfloat16_supported
+from transformers import DataCollatorForSeq2Seq, Trainer # isort: off
 
 # uv v -p 3.10
 # source .venv/bin/activate
