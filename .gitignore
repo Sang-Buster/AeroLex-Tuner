@@ -2,6 +2,8 @@
 **/atc_llama_merged
 **/results
 **/unsloth_compiled_cache
+**/hf_repo
 **/.ruff_cache
 **/__pycache__
 **/.venv
+.cursorignore

@@ -13,13 +13,13 @@ This repository contains scripts for fine-tuning, testing, and uploading a Llama
   - transformers
   - torch
   - huggingface-hub
-
+  - setuptools
 Install the required packages:
 
 ```bash
 uv v -p 3.10
 source .venv/bin/activate
-uv pip install pandas datasets unsloth transformers torch huggingface-hub
+uv pip install pandas datasets unsloth transformers torch huggingface-hub setuptools
 ```
 
 ## Files

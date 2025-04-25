@@ -11,8 +11,7 @@ This script:
 import argparse
 import os
 import shutil
-import subprocess
-import sys
+
 import torch
 from unsloth import FastLanguageModel, is_bfloat16_supported
 
@@ -99,20 +98,32 @@ def load_and_merge_model():
                 print(f"Error loading/merging PEFT adapter: {peft_error}")
                 return False
         else:
-            print(f"No adapter configuration or weights found in {args.adapter_dir}. Assuming input is already merged or a full model.")
+            print(
+                f"No adapter configuration or weights found in {args.adapter_dir}. Assuming input is already merged or a full model."
+            )
             if os.path.exists(os.path.join(args.adapter_dir, "config.json")):
-                 print(f"Copying model files from {args.adapter_dir} to {args.output_dir} as no adapter was found.")
-                 shutil.copytree(args.adapter_dir, args.output_dir, dirs_exist_ok=True)
-                 print("Model files copied.")
-                 if os.path.exists(os.path.join(args.adapter_dir, "tokenizer.json")):
-                     tokenizer_files = [f for f in os.listdir(args.adapter_dir) if "token" in f or f == "special_tokens_map.json"]
-                     for f_name in tokenizer_files:
-                         shutil.copy2(os.path.join(args.adapter_dir, f_name), args.output_dir)
-                     print("Tokenizer files copied.")
-                 return True
+                print(
+                    f"Copying model files from {args.adapter_dir} to {args.output_dir} as no adapter was found."
+                )
+                shutil.copytree(args.adapter_dir, args.output_dir, dirs_exist_ok=True)
+                print("Model files copied.")
+                if os.path.exists(os.path.join(args.adapter_dir, "tokenizer.json")):
+                    tokenizer_files = [
+                        f
+                        for f in os.listdir(args.adapter_dir)
+                        if "token" in f or f == "special_tokens_map.json"
+                    ]
+                    for f_name in tokenizer_files:
+                        shutil.copy2(
+                            os.path.join(args.adapter_dir, f_name), args.output_dir
+                        )
+                    print("Tokenizer files copied.")
+                return True
             else:
-                 print(f"Error: Neither adapter files nor a full model config found in {args.adapter_dir}.")
-                 return False
+                print(
+                    f"Error: Neither adapter files nor a full model config found in {args.adapter_dir}."
+                )
+                return False
 
     except Exception as e:
         print(f"Error during adapter handling: {str(e)}")
@@ -129,6 +140,7 @@ def load_and_merge_model():
     except Exception as e:
         print(f"Error saving merged model: {str(e)}")
         return False
+
 
 def main():
     """Main function to execute all steps."""

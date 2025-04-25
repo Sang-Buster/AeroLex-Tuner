@@ -14,6 +14,7 @@ python upload_to_hf.py --model-dir ./atc_llama_merged --repo-id your-username/at
 import argparse
 import os
 import sys
+
 from huggingface_hub import HfApi, upload_folder
 
 
@@ -39,7 +40,7 @@ def main():
     )
     parser.add_argument(
         "--commit-message",
-        default="Upload model files",
+        default="feat: upload model files",
         help="Commit message for the upload.",
     )
     parser.add_argument(
@@ -48,9 +49,7 @@ def main():
         help="Hugging Face API token (optional, uses login cache if not provided).",
     )
     parser.add_argument(
-        "--private",
-        action="store_true",
-        help="Create a private repository."
+        "--private", action="store_true", help="Create a private repository."
     )
 
     args = parser.parse_args()
@@ -68,13 +67,13 @@ def main():
         try:
             api.repo_info(repo_id=args.repo_id, repo_type=args.repo_type)
             print(f"Repository '{args.repo_id}' already exists.")
-        except Exception: # More specific exceptions can be caught if needed
+        except Exception:  # More specific exceptions can be caught if needed
             print(f"Repository '{args.repo_id}' not found. Creating...")
             api.create_repo(
                 repo_id=args.repo_id,
                 repo_type=args.repo_type,
                 private=args.private,
-                exist_ok=True # In case of race condition
+                exist_ok=True,  # In case of race condition
             )
             print(f"Repository '{args.repo_id}' created successfully.")
 
@@ -85,7 +84,7 @@ def main():
             repo_id=args.repo_id,
             repo_type=args.repo_type,
             commit_message=args.commit_message,
-            token=args.token, # Pass token explicitly if provided
+            token=args.token,  # Pass token explicitly if provided
         )
         print(f"Successfully uploaded to: {repo_url}")
 
@@ -93,5 +92,6 @@ def main():
         print(f"An error occurred during upload: {str(e)}")
         sys.exit(1)
 
+
 if __name__ == "__main__":
-    main() 
+    main()
