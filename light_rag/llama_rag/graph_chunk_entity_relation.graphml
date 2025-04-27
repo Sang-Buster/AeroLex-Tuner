@@ -1,0 +1,806 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d9" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d8" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d7" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d6" for="edge" attr.name="description" attr.type="string" />
+  <key id="d5" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Delta 209">
+      <data key="d0">Delta 209</data>
+      <data key="d1">aircraft</data>
+      <data key="d2">Delta 209 is an aircraft that communicated with Dulles Approach Control.&lt;SEP&gt;Delta 209 is the aircraft that communicated with Dulles Approach Control.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Dulles Approach Control">
+      <data key="d0">Dulles Approach Control</data>
+      <data key="d1">air traffic control</data>
+      <data key="d2">Dulles Approach Control is the air traffic control center that communicated with Delta 209.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ATC Controller">
+      <data key="d0">ATC Controller</data>
+      <data key="d1">controller</data>
+      <data key="d2">ATC Controller is a controller who communicates with pilots for flight instructions.&lt;SEP&gt;The ATC Controller is a person responsible for guiding air traffic, involved in the farewell or handoff communication with Delta 209.&lt;SEP&gt;The ATC Controller is the person communicating with Delta 209.&lt;SEP&gt;The ATC Controller is a person who provides instructions to the pilot.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c&lt;SEP&gt;chunk-d3eacb22d1ad5f59d632885ce03421d5&lt;SEP&gt;chunk-9235686c0136509c5d10e45207c90b96&lt;SEP&gt;chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Dulles Airport">
+      <data key="d0">Dulles Airport</data>
+      <data key="d1">location</data>
+      <data key="d2">Dulles Airport is the location where Delta 209 is located.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Runway 34L">
+      <data key="d0">Runway 34L</data>
+      <data key="d1">runway</data>
+      <data key="d2">Runway 34L is the runway where Delta 209 was located.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Delta 1581">
+      <data key="d0">Delta 1581</data>
+      <data key="d1">aircraft</data>
+      <data key="d2">Delta 1581 is another aircraft that was involved in the communication with Dulles Approach Control.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="American 1581">
+      <data key="d0">American 1581</data>
+      <data key="d1">aircraft</data>
+      <data key="d2">American 1581 is the aircraft that was being referred to as Delta 1581.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="DCA">
+      <data key="d0">DCA</data>
+      <data key="d1">air traffic control center</data>
+      <data key="d2">DCA is the air traffic control center that handles aircraft communications at Dulles Airport.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ATC ">
+      <data key="d0">ATC </data>
+      <data key="d1">air traffic controller</data>
+      <data key="d2">The ATC is the person or team responsible for air traffic control at Dulles Airport.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Delta Air Lines">
+      <data key="d0">Delta Air Lines</data>
+      <data key="d1">organization</data>
+      <data key="d2">Delta Air Lines is the airline that operates the aircraft Delta 1581 and Delta 209.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="United States">
+      <data key="d0">United States</data>
+      <data key="d1">country</data>
+      <data key="d2">The United States is the country where Dulles Airport is located.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Virginia">
+      <data key="d0">Virginia</data>
+      <data key="d1">state</data>
+      <data key="d2">Virginia is the state where Dulles Airport is located.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Chantilly">
+      <data key="d0">Chantilly</data>
+      <data key="d1">location</data>
+      <data key="d2">Chantilly is the city where Dulles Airport is located.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="World Athletics Championship">
+      <data key="d0">World Athletics Championship</data>
+      <data key="d1">event</data>
+      <data key="d2">The World Athletics Championship is an international track and field competition.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Tokyo">
+      <data key="d0">Tokyo</data>
+      <data key="d1">location</data>
+      <data key="d2">Tokyo is the host city of the World Athletics Championship.</data>
+      <data key="d3">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Aircraft Pilot/Crew">
+      <data key="d0">Aircraft Pilot/Crew</data>
+      <data key="d1">person</data>
+      <data key="d2">The Aircraft Pilot/Crew is the person in charge of the flight, likely Delta 209, involved in the farewell or handoff communication.</data>
+      <data key="d3">chunk-d3eacb22d1ad5f59d632885ce03421d5</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Farewell/Handoff Communication">
+      <data key="d0">Farewell/Handoff Communication</data>
+      <data key="d1">event</data>
+      <data key="d2">Farewell/Handoff Communication is an event where one controller takes over the responsibility of guiding another aircraft, in this case, Delta 209.</data>
+      <data key="d3">chunk-d3eacb22d1ad5f59d632885ce03421d5</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Controller">
+      <data key="d0">Controller</data>
+      <data key="d1">person</data>
+      <data key="d2">The Controller is a person responsible for guiding air traffic, involved in the farewell or handoff communication.</data>
+      <data key="d3">chunk-d3eacb22d1ad5f59d632885ce03421d5</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="aircraft">
+      <data key="d0">aircraft</data>
+      <data key="d1">category</data>
+      <data key="d2">aircraft is a general category of vehicles used for transportation, in this case, likely a commercial airliner.</data>
+      <data key="d3">chunk-d3eacb22d1ad5f59d632885ce03421d5</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="communication">
+      <data key="d0">communication</data>
+      <data key="d1">category</data>
+      <data key="d2">communication is a general category of interactions, in this case, a farewell or handoff communication between controllers and pilots.</data>
+      <data key="d3">chunk-d3eacb22d1ad5f59d632885ce03421d5</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Aerostar 2699G">
+      <data key="d0">Aerostar 2699G</data>
+      <data key="d1">aircraft</data>
+      <data key="d2">Aerostar 2699G is an aircraft that is being instructed to contact Washington at frequency 3000.</data>
+      <data key="d3">chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Washington Controller">
+      <data key="d0">Washington Controller</data>
+      <data key="d1">air traffic controller</data>
+      <data key="d2">Washington Controller is the person in charge of guiding the pilot, Aerostar 2699G, through communication.</data>
+      <data key="d3">chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Aerostar 99G">
+      <data key="d0">Aerostar 99G</data>
+      <data key="d1">aircraft</data>
+      <data key="d2">Aerostar 99G is an organization, likely an aircraft, being guided by the ATC Controller.&lt;SEP&gt;Aerostar 99G is another aircraft that is being instructed to fly heading 330 and climb to 4000 feet.&lt;SEP&gt;Aerostar 99G is the aircraft communicating with Dulles Approach for navigation and frequency change.&lt;SEP&gt;Aerostar 99G is the aircraft that needs navigation instructions and frequency change.</data>
+      <data key="d3">chunk-fad3bf72a6b626aab80244182619d0d7&lt;SEP&gt;chunk-9235686c0136509c5d10e45207c90b96&lt;SEP&gt;chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="DR1-1">
+      <data key="d0">DR1-1</data>
+      <data key="d1">air traffic control phrase</data>
+      <data key="d2">DR1-1 is an air traffic control phrase used to instruct Aerostar 99G to fly heading 330 and climb to 4000 feet.</data>
+      <data key="d3">chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="N99G">
+      <data key="d0">N99G</data>
+      <data key="d1">aircraft callsign</data>
+      <data key="d2">N99G is the aircraft callsign for Aerostar 99G.&lt;SEP&gt;N99G is the aircraft callsign of Aero Star 99G.</data>
+      <data key="d3">chunk-1da3f70e3defe8a1762a146456d910b1&lt;SEP&gt;chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Washington">
+      <data key="d0">Washington</data>
+      <data key="d1">location</data>
+      <data key="d2">Washington is the location of the air traffic controller.</data>
+      <data key="d3">chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="AeroStar">
+      <data key="d0">AeroStar</data>
+      <data key="d1">aircraft manufacturer</data>
+      <data key="d2">AeroStar is the manufacturer of the aircraft Aerostar 2699G and Aerostar 99G.</data>
+      <data key="d3">chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Golf">
+      <data key="d0">Golf</data>
+      <data key="d1">aircraft model</data>
+      <data key="d2">Golf is the model of the aircraft Aerostar 2699G and Aerostar 99G.</data>
+      <data key="d3">chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="3">
+      <data key="d0">3</data>
+      <data key="d1">number</data>
+      <data key="d2">3 is a number used to identify the aircraft Aerostar 2699G and Aerostar 99G.</data>
+      <data key="d3">chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Zero">
+      <data key="d0">Zero</data>
+      <data key="d1">zero </data>
+      <data key="d2">zero is a number used to indicate the altitude of the aircraft Aerostar 99G.</data>
+      <data key="d3">chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="330">
+      <data key="d0">330</data>
+      <data key="d1">heading</data>
+      <data key="d2">330 is a specific heading mentioned in the instructions.&lt;SEP&gt;330 is the heading of the aircraft Aerostar 99G.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96&lt;SEP&gt;chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="4000">
+      <data key="d0">4000</data>
+      <data key="d1">altitude</data>
+      <data key="d2">4000 is the altitude of the aircraft Aerostar 99G.</data>
+      <data key="d3">chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Altitude and Heading Adjustment Instruction">
+      <data key="d0">Altitude and Heading Adjustment Instruction</data>
+      <data key="d1">event</data>
+      <data key="d2">Altitude and Heading Adjustment Instruction is an event where the ATC Controller provides instructions to the pilot.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Fly heading 330">
+      <data key="d0">Fly heading 330</data>
+      <data key="d1">category</data>
+      <data key="d2">Fly heading 330 is a category of instruction given to the pilot.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Climb and maintain 4000 feet">
+      <data key="d0">Climb and maintain 4000 feet</data>
+      <data key="d1">category</data>
+      <data key="d2">Climb and maintain 4000 feet is another category of instruction given to the pilot.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="4000 feet">
+      <data key="d0">4000 feet</data>
+      <data key="d1">category</data>
+      <data key="d2">4000 feet is a specific altitude mentioned in the instructions.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Speaker">
+      <data key="d0">Speaker</data>
+      <data key="d1">person</data>
+      <data key="d2">The Speaker is the person providing instructions to the Aerostar 99G pilot.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Listener">
+      <data key="d0">Listener</data>
+      <data key="d1">person</data>
+      <data key="d2">The Listener is the Aerostar 99G pilot receiving instructions from the Speaker.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Event">
+      <data key="d0">Event</data>
+      <data key="d1">event</data>
+      <data key="d2">Event is a general term for the Altitude and Heading Adjustment Instruction.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Edit">
+      <data key="d0">Edit</data>
+      <data key="d1">category</data>
+      <data key="d2">Edit is a category of instruction related to the Altitude and Heading Adjustment Instruction.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;Aerostar 99G (Note:)">
+      <data key="d0">"Aerostar 99G (Note:)</data>
+      <data key="d1">organization</data>
+      <data key="d2">Aerostar 99G is an aircraft being guided by the ATC Controller.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;Controller (Known)">
+      <data key="d0">"Controller (Known)</data>
+      <data key="d1">person</data>
+      <data key="d2">The Controller is a person who knows the Aerostar 99G pilot.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Contact">
+      <data key="d0">Contact</data>
+      <data key="d1">event</data>
+      <data key="d2">Contact is a general term for the communication between the ATC Controller and the Aerostar 99G pilot.</data>
+      <data key="d3">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Pilot">
+      <data key="d0">Pilot</data>
+      <data key="d1">person</data>
+      <data key="d2">Pilot is a person who operates the aircraft.&lt;SEP&gt;The Pilot is the person flying the Aerostar 99G aircraft.&lt;SEP&gt;The Pilot is responsible for flying the aircraft and following air traffic control instructions.</data>
+      <data key="d3">chunk-e912d8d01f510c7220c6d37b85d7e687&lt;SEP&gt;chunk-9235686c0136509c5d10e45207c90b96&lt;SEP&gt;chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Aero Star 99G">
+      <data key="d0">Aero Star 99G</data>
+      <data key="d1">aircraft</data>
+      <data key="d2">Aero Star 99G is an aircraft that communicates with ATC for flight instructions.</data>
+      <data key="d3">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Washington Departure Controller">
+      <data key="d0">Washington Departure Controller</data>
+      <data key="d1">controller</data>
+      <data key="d2">Washington Departure Controller is an ATC controller who communicates with Aero Star 99G.</data>
+      <data key="d3">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ATC">
+      <data key="d0">ATC</data>
+      <data key="d1">organization</data>
+      <data key="d2">ATC is the air traffic control system used for communication between aircraft and air traffic controllers.&lt;SEP&gt;ATC stands for Air Traffic Control, a service that guides aircraft through takeoff, landing, and flight.&lt;SEP&gt;The Air Traffic Control is responsible for guiding aircraft through safe and efficient air traffic flow.</data>
+      <data key="d3">chunk-fad3bf72a6b626aab80244182619d0d7&lt;SEP&gt;chunk-e912d8d01f510c7220c6d37b85d7e687&lt;SEP&gt;chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Climb Instruction">
+      <data key="d0">Climb Instruction</data>
+      <data key="d1">event</data>
+      <data key="d2">Climb instruction is a type of communication between ATC and pilots to adjust altitude.</data>
+      <data key="d3">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Flight Instructions">
+      <data key="d0">Flight Instructions</data>
+      <data key="d1">event</data>
+      <data key="d2">Flight Instructions are communications between ATC and pilots to guide the aircraft.</data>
+      <data key="d3">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Flight Status">
+      <data key="d0">Flight Status</data>
+      <data key="d1">event</data>
+      <data key="d2">Flight Status refers to the current state of the aircraft's flight.</data>
+      <data key="d3">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Flight Instructions Issuance">
+      <data key="d0">Flight Instructions Issuance</data>
+      <data key="d1">event</data>
+      <data key="d2">Flight Instructions Issuance is the process of issuing flight instructions to pilots.</data>
+      <data key="d3">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Altitude Adjustment">
+      <data key="d0">Altitude Adjustment</data>
+      <data key="d1">event</data>
+      <data key="d2">Altitude Adjustment refers to the change in altitude of the aircraft.</data>
+      <data key="d3">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Flight Plan">
+      <data key="d0">Flight Plan</data>
+      <data key="d1">event</data>
+      <data key="d2">Flight Plan is a plan for the flight, including takeoff, landing, and routing.</data>
+      <data key="d3">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Air Traffic Control">
+      <data key="d0">Air Traffic Control</data>
+      <data key="d1">organization</data>
+      <data key="d2">Air Traffic Control is a service that guides aircraft through takeoff, landing, and flight.&lt;SEP&gt;Air Traffic Control is a service that provides guidance and coordination for aircraft navigation.&lt;SEP&gt;The Air Traffic Control is responsible for guiding aircraft through safe and efficient air traffic flow.&lt;SEP&gt;Air Traffic Control is the entity responsible for guiding and directing aircraft in the airspace.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51&lt;SEP&gt;chunk-e912d8d01f510c7220c6d37b85d7e687&lt;SEP&gt;chunk-586202c03a10edb57f70105c09b9f216&lt;SEP&gt;chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Aircraft Communication">
+      <data key="d0">Aircraft Communication</data>
+      <data key="d1">event</data>
+      <data key="d2">Aircraft Communication refers to the exchange of information between ATC and pilots.</data>
+      <data key="d3">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Altitude Change Report">
+      <data key="d0">Altitude Change Report</data>
+      <data key="d3">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d2">Washington Departure Controller receives altitude change reports from Aero Star 99G, monitoring its flight status.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Csgn">
+      <data key="d0">Csgn</data>
+      <data key="d1">geo</data>
+      <data key="d2">Csgn is a code for the flight's registration.&lt;SEP&gt;Csgn is an aircraft callsign.</data>
+      <data key="d3">chunk-e912d8d01f510c7220c6d37b85d7e687&lt;SEP&gt;chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Rway">
+      <data key="d0">Rway</data>
+      <data key="d1">organization</data>
+      <data key="d2">Rway is a runway number.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Altd">
+      <data key="d0">Altd</data>
+      <data key="d1">organization</data>
+      <data key="d2">Altd is an altitude in feet MSL.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="FLvl">
+      <data key="d0">FLvl</data>
+      <data key="d1">organization</data>
+      <data key="d2">FLvl is a flight level.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Hdng">
+      <data key="d0">Hdng</data>
+      <data key="d1">organization</data>
+      <data key="d2">Hdng is a heading in degrees.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="VORr">
+      <data key="d0">VORr</data>
+      <data key="d1">organization</data>
+      <data key="d2">VORr is a VOR radial direction.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Freq">
+      <data key="d0">Freq</data>
+      <data key="d1">organization</data>
+      <data key="d2">Freq is a frequency.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ASpd">
+      <data key="d0">ASpd</data>
+      <data key="d1">organization</data>
+      <data key="d2">ASpd is an airspeed in knots.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Dist">
+      <data key="d0">Dist</data>
+      <data key="d1">organization</data>
+      <data key="d2">Dist is a distance in nautical miles.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Squk">
+      <data key="d0">Squk</data>
+      <data key="d1">organization</data>
+      <data key="d2">Squk is a transponder code (Squawk).</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="TZlu">
+      <data key="d0">TZlu</data>
+      <data key="d1">organization</data>
+      <data key="d2">TZlu is a standard time (Zulu).</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Amtr">
+      <data key="d0">Amtr</data>
+      <data key="d1">organization</data>
+      <data key="d2">Amtr is an altimeter setting.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Wdir">
+      <data key="d0">Wdir</data>
+      <data key="d1">organization</data>
+      <data key="d2">Wdir is a wind direction.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Aircraft">
+      <data key="d0">Aircraft</data>
+      <data key="d1">organization</data>
+      <data key="d2">Aircraft is a vehicle used for air travel, typically with multiple seats and wings.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Flight Navigation">
+      <data key="d0">Flight Navigation</data>
+      <data key="d1">organization</data>
+      <data key="d2">Flight Navigation refers to the process of determining the aircraft's position and course.</data>
+      <data key="d3">chunk-df5be83b98d83c86c4a470565bf85b51</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Delta 743">
+      <data key="d0">Delta 743</data>
+      <data key="d1">aircraft</data>
+      <data key="d2">Delta 743 is an aircraft that communicates with air traffic control, providing information and following instructions.</data>
+      <data key="d3">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Dulles Approach">
+      <data key="d0">Dulles Approach</data>
+      <data key="d1">airport</data>
+      <data key="d2">Dulles Approach is the air traffic control tower where Delta 743 communicates for navigation instructions.</data>
+      <data key="d3">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Casanova">
+      <data key="d0">Casanova</data>
+      <data key="d1">air traffic controller</data>
+      <data key="d2">Casanova is the air traffic controller communicating with Aerostar 99G.</data>
+      <data key="d3">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Washington Center">
+      <data key="d0">Washington Center</data>
+      <data key="d1">air traffic control center</data>
+      <data key="d2">Washington Center is the air traffic control center where pilots contact for navigation and frequency changes.</data>
+      <data key="d3">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Linden">
+      <data key="d0">Linden</data>
+      <data key="d1">air traffic controller</data>
+      <data key="d2">Linden is the air traffic controller communicating with Aerostar 99G for navigation and frequency changes.</data>
+      <data key="d3">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Delta Aviation">
+      <data key="d0">Delta Aviation</data>
+      <data key="d1">airline</data>
+      <data key="d2">Delta Aviation is the airline that operates the aircraft, Aerostar 99G.</data>
+      <data key="d3">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Federal Aviation Administration">
+      <data key="d0">Federal Aviation Administration</data>
+      <data key="d1">government agency</data>
+      <data key="d2">Federal Aviation Administration is the government agency responsible for regulating air traffic and aviation safety.</data>
+      <data key="d3">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="NEXUS">
+      <data key="d0">NEXUS</data>
+      <data key="d1">air traffic management system</data>
+      <data key="d2">NEXUS is the air traffic management system used by air traffic controllers to manage air traffic.</data>
+      <data key="d3">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Tulsa Air Traffic Control">
+      <data key="d0">Tulsa Air Traffic Control</data>
+      <data key="d1">air traffic control tower</data>
+      <data key="d2">Tulsa Air Traffic Control is the air traffic control tower where Aerostar 99G communicates with air traffic controllers.</data>
+      <data key="d3">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="USAir 2">
+      <data key="d0">USAir 2</data>
+      <data key="d1">organization</data>
+      <data key="d2">USAir 2 is a commercial airline operating under the Air Traffic Control.</data>
+      <data key="d3">chunk-e912d8d01f510c7220c6d37b85d7e687</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Number1">
+      <data key="d0">Number1</data>
+      <data key="d1">category</data>
+      <data key="d2">Number1 is a unique identifier for the flight.</data>
+      <data key="d3">chunk-e912d8d01f510c7220c6d37b85d7e687</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Safe Air Traffic Flow">
+      <data key="d0">Safe Air Traffic Flow</data>
+      <data key="d1">category</data>
+      <data key="d2">Safe Air Traffic Flow refers to the efficient movement of aircraft through the air traffic control system.</data>
+      <data key="d3">chunk-e912d8d01f510c7220c6d37b85d7e687</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Air Traffic Flow">
+      <data key="d0">Air Traffic Flow</data>
+      <data key="d1">category</data>
+      <data key="d2">Air Traffic Flow refers to the movement of aircraft through the air traffic control system.</data>
+      <data key="d3">chunk-e912d8d01f510c7220c6d37b85d7e687</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Flight Operation">
+      <data key="d0">Flight Operation</data>
+      <data key="d1">category</data>
+      <data key="d2">Flight Operation refers to the process of flying an aircraft safely and efficiently.</data>
+      <data key="d3">chunk-e912d8d01f510c7220c6d37b85d7e687</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Aircraft Callsign">
+      <data key="d0">Aircraft Callsign</data>
+      <data key="d1">organization</data>
+      <data key="d2">Aircraft Callsign is a standardized code used for identification of aircraft.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="USAir 237">
+      <data key="d0">USAir 237</data>
+      <data key="d1">organization</data>
+      <data key="d2">USAir 237 is the specific aircraft with the callsign.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Washington Departure Radar Contact">
+      <data key="d0">Washington Departure Radar Contact</data>
+      <data key="d1">geo</data>
+      <data key="d2">Washington Departure Radar Contact refers to the location where the aircraft was first spotted.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Radar Contact Establishment">
+      <data key="d0">Radar Contact Establishment</data>
+      <data key="d1">geo</data>
+      <data key="d2">Radar Contact Establishment refers to the event of the aircraft making contact with air traffic control.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Climb to 5,000 Feet">
+      <data key="d0">Climb to 5,000 Feet</data>
+      <data key="d1">event</data>
+      <data key="d2">Climb to 5,000 Feet is an instruction given to the aircraft to ascend to a specific altitude.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Altimeter Setting">
+      <data key="d0">Altimeter Setting</data>
+      <data key="d1">geo</data>
+      <data key="d2">Altimeter Setting refers to the altitude reading displayed on the aircraft's altimeter, which is used to determine the aircraft's current altitude.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;Standard Time (Zulu)">
+      <data key="d0">"Standard Time (Zulu)</data>
+      <data key="d1">geo</data>
+      <data key="d2">Standard Time (Zulu) is a time zone standard used in aviation to ensure clear communication between aircraft and air traffic control.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;Transponder Code (Squawk)">
+      <data key="d0">"Transponder Code (Squawk)</data>
+      <data key="d1">geo</data>
+      <data key="d2">Transponder Code (Squawk) is a unique identifier assigned to each aircraft, used for identification and communication purposes.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Wind Direction">
+      <data key="d0">Wind Direction</data>
+      <data key="d1">geo</data>
+      <data key="d2">Wind Direction refers to the direction from which the wind is blowing, which affects the aircraft's flight path and speed.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;Wind Speed (knots)">
+      <data key="d0">"Wind Speed (knots)</data>
+      <data key="d1">geo</data>
+      <data key="d2">Wind Speed (knots) measures the speed of the wind in knots, which impacts the aircraft's flight performance.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;Temperature (°C)">
+      <data key="d0">"Temperature (°C)</data>
+      <data key="d1">geo</data>
+      <data key="d2">Temperature (°C) refers to the air temperature, which affects the aircraft's performance and comfort.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;Dew Point (°C)">
+      <data key="d0">"Dew Point (°C)</data>
+      <data key="d1">geo</data>
+      <data key="d2">Dew Point (°C) measures the temperature at which the air becomes saturated with water vapor, affecting the aircraft's performance and comfort.</data>
+      <data key="d3">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <edge source="Delta 209" target="Dulles Approach Control">
+      <data key="d5">8.0</data>
+      <data key="d6">Delta 209 communicated with Dulles Approach Control on frequency 134.2.</data>
+      <data key="d7">air traffic communication</data>
+      <data key="d8">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Delta 209" target="ATC Controller">
+      <data key="d5">7.0</data>
+      <data key="d6">Delta 209 communicated with the ATC Controller for handoff communication.</data>
+      <data key="d7">air traffic control interaction</data>
+      <data key="d8">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Dulles Approach Control" target="Dulles Airport">
+      <data key="d5">9.0</data>
+      <data key="d6">Dulles Approach Control is responsible for air traffic control at Dulles Airport.</data>
+      <data key="d7">air traffic management</data>
+      <data key="d8">chunk-df77205357f1c815c88cfe6c0f88b30c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ATC Controller" target="Aerostar 99G">
+      <data key="d5">8.0</data>
+      <data key="d6">"The ATC Controller is guiding the Aerostar 99G pilot through instructions.</data>
+      <data key="d7">guidance, instruction</data>
+      <data key="d8">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Aerostar 2699G" target="Aerostar 99G">
+      <data key="d5">7.0</data>
+      <data key="d6">Aerostar 2699G is being instructed to contact Washington at frequency 3000, while Aerostar 99G is being instructed to fly heading 330 and climb to 4000 feet.</data>
+      <data key="d7">aircraft communication, flight instructions</data>
+      <data key="d8">chunk-1da3f70e3defe8a1762a146456d910b1</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Aerostar 99G" target="Altitude and Heading Adjustment Instruction">
+      <data key="d5">7.0</data>
+      <data key="d6">"The Aerostar 99G is receiving the Altitude and Heading Adjustment Instruction from the ATC Controller.</data>
+      <data key="d7">pilot guidance, event participation</data>
+      <data key="d8">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Aerostar 99G" target="Casanova">
+      <data key="d5">8.0</data>
+      <data key="d6">Aerostar 99G is communicating with Casanova for navigation instructions and frequency change.</data>
+      <data key="d7">aircraft-air traffic controller interaction</data>
+      <data key="d8">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Aerostar 99G" target="Dulles Approach">
+      <data key="d5">9.0</data>
+      <data key="d6">Aerostar 99G is communicating with Dulles Approach for navigation instructions and frequency change.</data>
+      <data key="d7">aircraft-airport interaction</data>
+      <data key="d8">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Fly heading 330" target="Climb and maintain 4000 feet">
+      <data key="d5">9.0</data>
+      <data key="d6">"Fly heading 330 is a part of the Climb and maintain 4000 feet instruction.</data>
+      <data key="d7">instruction component, altitude maneuver</data>
+      <data key="d8">chunk-9235686c0136509c5d10e45207c90b96</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Aero Star 99G" target="ATC">
+      <data key="d5">7.0</data>
+      <data key="d6">Aero Star 99G communicates with ATC for flight instructions, such as climb instructions and altitude changes.</data>
+      <data key="d7">aircraft and controller interaction, communication</data>
+      <data key="d8">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Aero Star 99G" target="Washington Departure Controller">
+      <data key="d5">8.0</data>
+      <data key="d6">Washington Departure Controller issues climb instructions to Aero Star 99G, guiding it to adjust altitude.</data>
+      <data key="d7">controller guidance, aircraft action</data>
+      <data key="d8">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Aero Star 99G" target="Climb Instruction">
+      <data key="d5">9.0</data>
+      <data key="d6">Aero Star 99G executes climb instructions, adjusting its altitude as instructed by ATC.</data>
+      <data key="d7">aircraft action, instruction execution</data>
+      <data key="d8">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Washington Departure Controller" target="Altitude Change Report">
+      <data key="d5">10.0</data>
+      <data key="d6">Washington Departure Controller receives altitude change reports from Aero Star 99G, monitoring its flight status.</data>
+      <data key="d7">controller monitoring, aircraft reporting</data>
+      <data key="d8">chunk-4daf551953925e9890754843ef6f995a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Casanova" target="Washington Center">
+      <data key="d5">7.0</data>
+      <data key="d6">Casanova communicates with Washington Center for navigation and frequency changes.</data>
+      <data key="d7">air traffic controller-air traffic control center interaction</data>
+      <data key="d8">chunk-fad3bf72a6b626aab80244182619d0d7</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="USAir 237" target="Washington Departure Radar Contact">
+      <data key="d5">18.0</data>
+      <data key="d6">USAir 237 made contact with Washington Departure Radar Contact to establish communication and altitude instructions.&lt;SEP&gt;Washington Departure Radar Contact gave instructions to USAir 237 to establish radar contact and maintain 5,000 feet.</data>
+      <data key="d7">air traffic control, aircraft instruction&lt;SEP&gt;air traffic control, communication establishment</data>
+      <data key="d8">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="USAir 237" target="Climb to 5,000 Feet">
+      <data key="d5">9.0</data>
+      <data key="d6">USAir 237 was instructed to climb to 5,000 feet by Washington Departure Radar Contact.</data>
+      <data key="d7">altitude instruction, aircraft response</data>
+      <data key="d8">chunk-586202c03a10edb57f70105c09b9f216</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+  </graph>
+</graphml>
