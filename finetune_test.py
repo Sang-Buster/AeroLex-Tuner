@@ -58,12 +58,7 @@ parser.add_argument(
 parser.add_argument(
     "--download",
     metavar="MODEL",
-    help="Download a Hugging Face model to use locally (will exit after download)",
-)
-parser.add_argument(
-    "--download-base",
-    action="store_true",
-    help="Download the base model specified by --base-model-name to use locally",
+    help="Download a model from Hugging Face to use locally (will exit after download). Use this for both main models and base models.",
 )
 parser.add_argument(
     "--device",
@@ -139,10 +134,8 @@ def download_model(model_name, is_base=False):
 
     # Create download directory based on model name
     model_dir_name = model_name.split("/")[-1]
-    if is_base:
-        download_dir = os.path.join("models", model_dir_name)
-    else:
-        download_dir = os.path.join("models", model_dir_name)
+    # Create a unified structure - all models go to the same models directory
+    download_dir = os.path.join("models", model_dir_name)
 
     os.makedirs(download_dir, exist_ok=True)
 
@@ -171,14 +164,7 @@ if args.download:
     download_dir = download_model(args.download)
     if download_dir:
         print(f"To use this model, run with: --model-dir {download_dir} --offline")
-    sys.exit(0)
-
-if args.download_base:
-    download_dir = download_model(args.base_model_name, is_base=True)
-    if download_dir:
-        print(
-            f"To use this base model for comparison, run with: --base-model-dir {download_dir} --offline"
-        )
+        print(f"Or as a base model with: --base-model-dir {download_dir} --offline")
     sys.exit(0)
 
 # Import remaining libraries after help check and download
@@ -363,7 +349,7 @@ def load_models_and_tokenizers():
                             f"Error: Local base model directory not found: {base_model_name}"
                         )
                         print(
-                            "Please specify a valid local directory with --base-model-dir or download with --download-base"
+                            "Please specify a valid local directory with --base-model-dir or download with --download"
                         )
                         return model, tokenizer, None, None
 
@@ -382,7 +368,7 @@ def load_models_and_tokenizers():
                             f"Error: Local base model directory not found: {base_model_name}"
                         )
                         print(
-                            "Please specify a valid local directory with --base-model-dir or download with --download-base"
+                            "Please specify a valid local directory with --base-model-dir or download with --download"
                         )
                         return model, tokenizer, None, None
 
@@ -406,7 +392,7 @@ def load_models_and_tokenizers():
                         "\nNetwork error: Cannot connect to Hugging Face. Are you offline?"
                     )
                     print("If you're offline, you need to:")
-                    print("1. First download the base model using: --download-base")
+                    print("1. First download the base model using: --download")
                     print(
                         "2. Then run with: --base-model-dir models/<model-name> --offline --compare-with-base"
                     )
@@ -476,6 +462,8 @@ def run_test(model, tokenizer, base_model, base_tokenizer, input_text, prompt_st
     if base_model is not None:
         base_device = next(base_model.parameters()).device
         print(f"Base model is on device: {base_device}")
+    else:
+        print("Base model comparison requested but base model could not be loaded")
 
     # Set generation parameters (optional, adjust as needed)
     generation_params = {
@@ -511,7 +499,7 @@ def run_test(model, tokenizer, base_model, base_tokenizer, input_text, prompt_st
         print(f"Error during fine-tuned model generation: {e}")
         finetuned_output = f"Error: {str(e)}"
 
-    # Generate with base model if requested
+    # Generate with base model if available
     base_output = ""
     if base_model is not None and base_tokenizer is not None:
         print("Generating response from base model...")
@@ -551,14 +539,24 @@ def run_test(model, tokenizer, base_model, base_tokenizer, input_text, prompt_st
     # Print output comparison
     print("\n" + "=" * 40 + " COMPARISON " + "=" * 40)
 
-    if base_model is not None:
+    if base_model is not None and base_output and not base_output.startswith("Error:"):
         print("\n" + "-" * 40 + " FINE-TUNED MODEL OUTPUT " + "-" * 40)
         print(finetuned_output.strip())
         print("\n" + "-" * 40 + " BASE MODEL OUTPUT " + "-" * 40)
         print(base_output.strip())
     else:
+        # If base model failed to load or generate, only show fine-tuned model
         print("\n" + "-" * 40 + " FINE-TUNED MODEL OUTPUT " + "-" * 40)
         print(finetuned_output.strip())
+        if args.compare_with_base:
+            print("\n" + "-" * 40 + " BASE MODEL OUTPUT " + "-" * 40)
+            print("Base model comparison requested but output not available.")
+            print("If you need to run in offline mode, first download the base model:")
+            print(f"  uv run finetune_test.py --download {args.base_model_name}")
+            print("Then run with:")
+            print(
+                f"  uv run finetune_test.py --model-dir {args.model_dir} --base-model-dir models/{args.base_model_name.split('/')[-1]} --offline --compare-with-base"
+            )
 
     print("\n" + "=" * 40 + " END COMPARISON " + "=" * 40)
 
@@ -634,11 +632,10 @@ def main():
         print(
             "Note: Base model comparison was requested but the base model couldn't be loaded."
         )
-        if args.offline:
-            print(
-                "If you're offline, first download the base model with --download-base"
-            )
-            print("Then use --base-model-dir to specify the local directory")
+        print("If you're offline, first download the base model with --download")
+        print(
+            f"Then use --base-model-dir models/{args.base_model_name.split('/')[-1]} --offline"
+        )
     print("=" * 80)
 
 

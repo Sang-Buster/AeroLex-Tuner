@@ -34,7 +34,7 @@ uv pip install pandas datasets unsloth transformers torch huggingface-hub setupt
 
 ## Downloading Models for Offline Use
 
-Scripts also includes a `--download` option to download models for offline use:
+The scripts include a `--download` option to download models for offline use:
 
 ```bash
 # Download a model for fine-tuning
@@ -43,11 +43,19 @@ uv run finetune.py --download meta-llama/Llama-3.2-3B-Instruct
 # Download a model for merging with adapters
 uv run finetune_merge_adapters.py --download meta-llama/Llama-3.2-3B-Instruct
 
-# Download a model for testing
+# Download a model for testing (can be used as main model or for comparison)
 uv run finetune_test.py --download meta-llama/Llama-3.2-3B-Instruct
 ```
 
 After downloading, models will be stored in a `models/` directory, and you can use them with the `--offline` flag.
+
+```bash
+# Use a downloaded model as your main model
+uv run finetune_test.py --model-dir models/Llama-3.2-3B-Instruct --offline
+
+# Use a downloaded model as your base model for comparison
+uv run finetune_test.py --model-dir ./atc_llama_merged --base-model-dir models/Llama-3.2-3B-Instruct --offline --compare-with-base
+```
 
 ## Fine-Tuning
 
@@ -94,7 +102,7 @@ uv run finetune.py \
 - `--max-seq-length`: Maximum sequence length (default: 2048)
 - `--model-name`: Model name to fine-tune (default: `meta-llama/Llama-3.2-3B-Instruct`)
 - `--offline`: Use local model files (model-name points to a local directory)
-- `--download`: Download a Hugging Face model to use locally
+- `--download`: Download a model from Hugging Face to use locally (can be used for both main and base models)
 - `--output-dir`: Output directory for the fine-tuned model (default: `./atc_llama`)
 - `--gradient-accumulation-steps`: Gradient accumulation steps (default: 4)
 - `--warmup-ratio`: Warmup ratio (default: 0.03)
@@ -125,7 +133,7 @@ uv run finetune_merge_adapters.py \
 - `--adapter-dir`: Input directory with fine-tuned LoRA adapters (default: `./atc_llama`)
 - `--base-model-name`: Base model name used for fine-tuning (default: `meta-llama/Llama-3.2-3B-Instruct`)
 - `--offline`: Use local model files (base-model-name points to a local directory)
-- `--download`: Download a Hugging Face model to use locally
+- `--download`: Download a model from Hugging Face to use locally (can be used for both main and base models)
 - `--output-dir`: Output directory for the merged model (default: `./atc_llama_merged`)
 
 ## Testing the Model
@@ -169,6 +177,11 @@ uv run finetune_test.py --model-dir ./atc_llama_merged --offline
 # With base model comparison in offline mode
 uv run finetune_test.py --model-dir ./atc_llama_merged --base-model-dir models/Llama-3.2-3B-Instruct --offline --compare-with-base
 ```
+
+# To download a model for offline comparison use:
+uv run finetune_test.py --download meta-llama/Llama-3.2-3B-Instruct
+# Then use it as the base model:
+uv run finetune_test.py --model-dir ./atc_llama_merged --base-model-dir models/Llama-3.2-3B-Instruct --offline --compare-with-base
 
 ### Multi-GPU and Device Control
 
@@ -214,8 +227,7 @@ uv run finetune_test.py \
 - `--load-in-4bit`: Load model in 4-bit precision (default behavior with Unsloth)
 - `--load-in-8bit`: Load model in 8-bit precision (alternative to 4-bit)
 - `--offline`: Use local model files (model-dir and base-model-name point to local directories)
-- `--download`: Download a Hugging Face model to use locally
-- `--download-base`: Download the base model specified by --base-model-name to use locally
+- `--download`: Download a model from Hugging Face to use locally (can be used for both main and base models)
 - `--device`: Device to run the model on (e.g., 'cuda:0', 'cuda:1', 'cpu')
 - `--base-device`: Device to run the base model on (e.g., 'cuda:1')
 - `--split-across-gpus`: Split model across multiple GPUs if it's too large for a single GPU
