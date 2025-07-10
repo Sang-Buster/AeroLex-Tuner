@@ -1,0 +1,139 @@
+[
+  {
+    "timestamp": 1752186154.1215882,
+    "transcript": "delta two zero nine turn left heading two eight zero",
+    "turn_detected": true,
+    "turn_confidence": 0.95,
+    "speaker": {
+      "speaker": "ATC Controller",
+      "confidence": 0.9,
+      "role": "approach",
+      "position": null
+    },
+    "extracted_info": {
+      "heading": {
+        "value": 280,
+        "action": "turn left",
+        "confidence": 1.0
+      }
+    },
+    "confidence": 0.95,
+    "llm_enhanced": true,
+    "processing_method": "llm_enhanced",
+    "is_final": true
+  },
+  {
+    "timestamp": 1752186159.1215892,
+    "transcript": "left to two eighty delta two oh nine",
+    "turn_detected": true,
+    "turn_confidence": 0.9,
+    "speaker": {
+      "speaker": "Delta 209",
+      "confidence": 0.85,
+      "role": "pilot",
+      "position": null
+    },
+    "extracted_info": {
+      "heading": {
+        "value": 280,
+        "action": "turn",
+        "confidence": 0.95
+      }
+    },
+    "confidence": 0.9,
+    "llm_enhanced": true,
+    "processing_method": "llm_enhanced",
+    "is_final": true
+  },
+  {
+    "timestamp": 1752186164.1215909,
+    "transcript": "american fifteen eighty one contact approach one two four point two",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "ATC Controller",
+      "confidence": 0.95,
+      "role": "departure",
+      "position": null
+    },
+    "extracted_info": {
+      "frequency": {
+        "value": 124.2,
+        "unit": "MHz",
+        "confidence": 0.98
+      }
+    },
+    "confidence": 0.95,
+    "llm_enhanced": true,
+    "processing_method": "llm_enhanced",
+    "is_final": true
+  },
+  {
+    "timestamp": 1752186169.1215913,
+    "transcript": "one two four point two american fifteen eighty one",
+    "turn_detected": true,
+    "turn_confidence": 0.85,
+    "speaker": {
+      "speaker": "American 1581",
+      "confidence": 0.88,
+      "role": "pilot",
+      "position": null
+    },
+    "extracted_info": {
+      "frequency": {
+        "value": 124.2,
+        "unit": "MHz",
+        "confidence": 0.95
+      }
+    },
+    "confidence": 0.88,
+    "llm_enhanced": true,
+    "processing_method": "llm_enhanced",
+    "is_final": true
+  },
+  {
+    "timestamp": 1752186174.1215916,
+    "transcript": "climb and maintain one seven thousand",
+    "turn_detected": true,
+    "turn_confidence": 0.92,
+    "speaker": {
+      "speaker": "ATC Controller",
+      "confidence": 0.9,
+      "role": "departure",
+      "position": null
+    },
+    "extracted_info": {
+      "altitude": {
+        "value": 17000,
+        "action": "climb and maintain",
+        "confidence": 0.98
+      }
+    },
+    "confidence": 0.93,
+    "llm_enhanced": true,
+    "processing_method": "llm_enhanced",
+    "is_final": true
+  },
+  {
+    "timestamp": 1752186179.121592,
+    "transcript": "squawk four five six seven",
+    "turn_detected": true,
+    "turn_confidence": 0.88,
+    "speaker": {
+      "speaker": "ATC Controller",
+      "confidence": 0.85,
+      "role": "approach",
+      "position": null
+    },
+    "extracted_info": {
+      "squawk": {
+        "value": "4567",
+        "confidence": 0.99
+      }
+    },
+    "confidence": 0.9,
+    "llm_enhanced": true,
+    "processing_method": "llm_enhanced",
+    "is_final": true
+  }
+]

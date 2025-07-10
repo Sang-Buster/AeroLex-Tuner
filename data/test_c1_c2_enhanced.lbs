@@ -1,0 +1,870 @@
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL209__00_01_03 63.040 66.010}
+ORIG: delta two zero nine turn left heading two eight zero
+PROC: delta two zero nine turn left heading two eight zero
+NUMC: Delta 2 0 9 turn left heading 2 8 0
+PUNC: Delta 2 0 9 turn left heading 2 8 0.
+T1: Delta two zero nine, turn left heading two eight zero.
+T2: DAL209, turn left heading 280.
+C1: (ATC) Delta two zero nine, turn left heading two eight zero.
+C2: (DAL209) DAL209, turn left heading 280.
+NOTE:
+    - Source Analysis: The source PUNC text is straightforward and follows standard aviation phraseology. The message clearly instructs the aircraft to change its heading, which is a common instruction in ATC communications.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections were necessary as the original message was clear and standard. However, a period at the end was added for proper sentence punctuation.
+    - T2 Confidence: High
+    - T2 Corrections: The airline code 'DAL' was used as per ICAO standards for commercial aircraft, and the heading was converted to numerical format.
+    - Speaker Context: Given that the speaker is an ATC controller (DR1-1) and the listener is a pilot (DAL209), the conversion maintained the appropriate command tone and used terminology consistent with ATC instructions to pilots. The use of standard aviation phraseology ensured clarity and safety in the communication.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (DAL209)
+        - Speaker Role: ATC
+        - Speaker Position: Approach/Departure
+        - Turn Boundary: Yes (1.00)
+        - Turn Reasoning: The message starts with a call sign (Delta two zero nine) followed by an instruction, which indicates the beginning of a new turn in the conversation.
+        - Info Extractions: {'heading': {'value': 280, 'action': 'turn left'}, 'confidence': 0.95, 'reasoning': "The message explicitly states 'turn left heading two eight zero', which clearly indicates the intended action and value."}
+        - Processing Method: llm
+        - Quality Score: 0.90
+        - Timestamp: 63.0s
+
+
+{dca_d1_1 1 dca_d1_1__DAL209__DR1-1__00_01_06 66.650 69.080}
+ORIG: left to two eighty delta two oh nine
+PROC: left to two eighty delta two oh nine
+NUMC: left to 280 Delta 209
+PUNC: left to 280 Delta 209.
+T1: Delta two zero nine, turn left to heading two eight zero.
+T2: DAL209, turn left to heading 280.
+C1: (ATC) Delta two zero nine, turn left to heading two eight zero.
+C2: (DAL209) DAL209, turn left to heading 280.
+NOTE:
+    - Source Analysis: The punctuated text provided a clear and standard aviation instruction. The original message was 'left to 280 Delta 209', which implies a turn instruction. For accurate conversion, it's essential to include the action (turn) for clarity in both T1 and T2 formats. The source text quality is high because it directly translates to standard aviation phraseology with minimal adjustments needed.
+    - T1 Confidence: High
+    - T1 Corrections: Added the airline name 'Delta' for clarity, converted numbers to words as per T1 format requirements, and adjusted phraseology to match standard conversational aviation language.
+    - T2 Confidence: High
+    - T2 Corrections: Used the airline code 'DAL' for the aircraft identifier as per T2 format requirements, and converted the heading to numerical digits.
+    - Speaker Context: The speaker context significantly influences the conversion, as understanding that DAL209 is the pilot and DR1-1 is the ATC position helps in applying the correct format for each role. The pilot's message is a response to an instruction, likely confirming or executing a turn to a new heading. This context ensures that the conversions (T1 and T2) maintain the intent of the original communication and adhere to aviation standards.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (DAL209)
+        - Speaker Role: ATC
+        - Speaker Position: Approach/Departure
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a new instruction ('turn left to heading two eight zero'), indicating a turn boundary in the conversation sequence.
+        - Info Extractions: {'heading': {'value': 280, 'action': 'turn left'}, 'confidence': 0.95, 'reasoning': "The message clearly states 'turn left to heading two eight zero', which is a standard phraseology for providing heading instructions."}
+        - Processing Method: llm
+        - Quality Score: 0.90
+        - Timestamp: 66.7s
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_01_33 93.550 96.110}
+ORIG: approach american eight ah fifteen eighty one is with you out of two
+PROC: approach american eight ah fifteen eighty one is with you out of two
+NUMC: approach American 8 ah 1581 is with you out of 2
+PUNC: approach American 8 ah 1581 is with you out of 2.
+T1: American Airlines eight ah fifteen eighty one is with you out of two.
+T2: Daytona Approach, AAL1581, is with you out of FL020.
+C1: (AAL1581) American Airlines eight ah fifteen eighty one is with you out of two.
+C2: (Daytona Approach) Daytona Approach, AAL1581, is with you out of FL020.
+NOTE:
+    - Source Analysis: The source PUNCTUATED text appears to be of good quality with proper punctuation and formatting. However, the phrase 'out of two' is ambiguous without context; it could refer to an altitude or another parameter. In the T2 conversion, it was assumed to be an altitude.
+    - T1 Confidence: High
+    - T1 Corrections: Converted '2' to 'two', used full airline name 'American Airlines', and maintained proper capitalization for the airline name.
+    - T2 Confidence: Medium
+    - T2 Corrections: Assumed 'approach' as the ATC position since it's a common phrase in pilot-controller communications. Also, converted 'two' to '020' assuming it refers to Flight Level 020. Used ICAO airline code 'AAL' for American Airlines.
+    - Speaker Context: Understanding that the speaker is the pilot of American Airlines flight 1581 (AAL1581) and the listener is the ATC controller (DR1-1) helped in tailoring the conversions to match typical pilot-controller communication patterns. The use of 'is with you' indicates the pilot is checking in or establishing contact with the controller.
+    - Enhanced Analysis:
+        - C1 Speaker: (AAL1581)
+        - C2 Speaker: (Daytona Approach)
+        - Speaker Role: Pilot
+        - Speaker Position: AAL1581
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign ('American eight ah fifteen eighty one') and reports the aircraft's status ('is with you out of two'), indicating the beginning of a new communication turn.
+        - Info Extractions: {'altitude': {'value': 2000, 'unit': 'feet', 'action': 'level off'}, 'confidence': 0.8, 'reasoning': "The phrase 'out of two' is likely referring to an altitude of 2,000 feet. However, the unit and action are not explicitly stated, which reduces the confidence level."}
+        - Processing Method: llm
+        - Quality Score: 0.85
+        - Timestamp: 93.5s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__AAL1581__00_01_36 96.630 101.060}
+ORIG: american fifteen eighty one washington departure radar contact climb and maintain one seven thousand
+PROC: american fifteen eighty one washington departure radar contact climb and maintain one seven thousand
+NUMC: American 1581 Washington departure radar contact climb and maintain 1 7000
+PUNC: American 1581 Washington departure radar contact climb and maintain 1 7000.
+T1: American fifteen eighty one, Washington departure, radar contact, climb and maintain seventeen thousand.
+T2: American 1581, Washington Departure, radar contact, climb and maintain FL170.
+C1: (ATC) American fifteen eighty one, Washington departure, radar contact, climb and maintain seventeen thousand.
+C2: (American 1581) American 1581, Washington Departure, radar contact, climb and maintain FL170.
+NOTE:
+    - Source Analysis: The source PUNCTUATED text appears to be of high quality with proper aviation phraseology. It clearly conveys the controller's instruction to the pilot, including the action to climb and maintain a specific altitude. The use of 'one seven thousand' in the original message is correctly interpreted as an altitude in thousands of feet.
+    - T1 Confidence: High
+    - T1 Corrections: Converted numbers to words, used full airline name, and maintained proper capitalization for 'Washington' as it refers to the Washington departure control.
+    - T2 Confidence: High
+    - T2 Corrections: Applied ICAO abbreviation for flight level (FL), converted altitude to standard format, and maintained airline code for clarity.
+    - Speaker Context: The speaker context significantly influences the conversion, as the message is from an ATC controller (DR1-1) to a pilot (AAL1581). This context ensures that the terminology and phraseology used are appropriate for the direction of communication. The controller's instruction to climb and maintain a specific altitude is standard in aviation and directly relevant to the pilot's actions, supporting the conversion's accuracy.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (American 1581)
+        - Speaker Role: Departure
+        - Speaker Position: Washington Departure Controller
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign ('American fifteen eighty one') and contains a clear instruction ('climb and maintain seventeen thousand'), indicating a new turn in the conversation.
+        - Info Extractions: {'altitude': {'value': 17000, 'unit': 'feet', 'action': 'climb and maintain'}, 'confidence': 0.95, 'reasoning': "The message clearly states 'climb and maintain seventeen thousand', which is a standard instruction for altitude assignment."}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 96.6s
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_01_41 101.300 103.460}
+ORIG: up to one seven thousand american fifteen eighty one
+PROC: up to one seven thousand american fifteen eighty one
+NUMC: up to 1 7000 American 1581
+PUNC: up to 1 7000 American 1581.
+T1: Up to one seven thousand, American fifteen eighty one.
+T2: Up to 17000, AAL1581.
+C1: (AAL1581) Up to one seven thousand, American fifteen eighty one.
+C2: (ATC) Up to 17000, AAL1581.
+NOTE:
+    - Source Analysis: The source PUNC text is clear and follows standard aviation communication phraseology, making it straightforward to convert into both T1 and T2 formats. The use of 'up to' indicates a climb instruction or acknowledgement, which is common in ATC communications.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections needed; the original text was directly convertible with standard aviation phraseology.
+    - T2 Confidence: High
+    - T2 Corrections: Converted 'one seven thousand' to numerical format '17000' and used ICAO airline code 'AAL' for American Airlines.
+    - Speaker Context: The speaker context as the pilot of AAL1581 communicating with ATC (DR1-1) influenced the conversion by ensuring that standard aviation terminology and phraseology were applied correctly. The previous conversation history also supported the understanding that 'American 1581' refers to an American Airlines flight, which aligns with using 'AAL' as the airline code in the T2 format.
+    - Enhanced Analysis:
+        - C1 Speaker: (AAL1581)
+        - C2 Speaker: (ATC)
+        - Speaker Role: Pilot
+        - Speaker Position: Aircraft
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a clear instruction ('Up to one seven thousand') and is followed by the aircraft call sign ('American fifteen eighty one'), indicating a new turn in the conversation.
+        - Info Extractions: {'altitude': {'value': 17000, 'unit': 'feet', 'action': 'climb'}, 'confidence': 0.95, 'reasoning': "The message explicitly mentions 'Up to one seven thousand', which is a standard phraseology for instructing an aircraft to climb to a specific altitude."}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 101.3s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL209__00_01_46 106.510 109.480}
+ORIG: delta two oh nine turn left heading two four zero
+PROC: delta two oh nine turn left heading two four zero
+NUMC: Delta 209 turn left heading 2 4 0
+PUNC: Delta 209 turn left heading 2 4 0.
+T1: Delta two zero nine, turn left heading two four zero.
+T2: DAL209, turn left heading 240.
+C1: (ATC) Delta two zero nine, turn left heading two four zero.
+C2: (DAL209) DAL209, turn left heading 240.
+NOTE:
+    - Source Analysis: The source PUNC text appears to be of high quality with proper aviation phraseology and clear communication intent. The message is concise, direct, and follows standard ATC to pilot communication protocols.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections were necessary as the original message was clear and standard. However, the numbers in the heading were converted to words for T1 format compliance.
+    - T2 Confidence: High
+    - T2 Corrections: No corrections were necessary as the original message was clear and standard. The airline code 'DAL' was used for the aircraft identifier in T2 format.
+    - Speaker Context: The speaker context as ATC (DR1-1) issuing instructions to a commercial aircraft pilot (DAL209) influenced the conversion by ensuring that standard ATC phraseology was used and that the instructions were clear and direct. The use of 'Delta' in T1 format and 'DAL' in T2 format reflects this context, maintaining proper communication protocols between ATC and the pilot.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (DAL209)
+        - Speaker Role: ATC
+        - Speaker Position: Approach/Departure
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign ('Delta two oh nine') followed by an instruction, which is a common pattern in ATC communications indicating the start of a new turn.
+        - Info Extractions: {'heading': {'value': 240, 'action': 'turn left'}, 'confidence': 0.95, 'reasoning': "The message explicitly states 'turn left heading two four zero', which clearly indicates the intended action and value."}
+        - Processing Method: llm
+        - Quality Score: 0.90
+        - Timestamp: 106.5s
+
+
+{dca_d1_1 1 dca_d1_1__DAL209__DR1-1__00_01_49 109.850 112.060}
+ORIG: left to two forty delta two oh nine
+PROC: left to two forty delta two oh nine
+NUMC: left to 240 Delta 209
+PUNC: left to 240 Delta 209.
+T1: Left to two four zero, Delta two zero nine.
+T2: Left to 240, DAL209.
+C1: (DAL209) Left to two four zero, Delta two zero nine.
+C2: (ATC) Left to 240, DAL209.
+NOTE:
+    - Source Analysis: The source PUNC text 'left to 240 Delta 209.' is clear and well-structured. It follows standard aviation phraseology, making it easy to convert into both T1 and T2 formats without needing significant corrections or assumptions.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections were necessary as the original message was clear and concise. The conversion maintained the same meaning and intent.
+    - T2 Confidence: High
+    - T2 Corrections: The airline code 'Delta' was replaced with its ICAO abbreviation 'DAL', and the number 'two four zero' was converted to numerical digits '240'. The callsign 'Delta two oh nine' was also standardized to 'DAL209' for consistency with ICAO formats.
+    - Speaker Context: Given that the speaker is DAL209 (a pilot) and the listener is DR1-1 (an ATC controller), the conversion ensured that the terminology used was appropriate for a pilot's communication to ATC. The use of 'Delta two zero nine' in T1 format and 'DAL209' in T2 format maintains consistency with aviation communication standards, where pilots typically use full airline names and controllers may use abbreviations or codes.
+    - Enhanced Analysis:
+        - C1 Speaker: (DAL209)
+        - C2 Speaker: (ATC)
+        - Speaker Role: Pilot
+        - Speaker Position: Aircraft DAL209
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a new instruction ('Left to two four zero'), indicating a turn boundary.
+        - Info Extractions: {'heading': {'value': 240, 'action': 'turn left'}, 'confidence': 0.95, 'reasoning': "The message contains a standard phrase 'Left to two four zero', which indicates a heading instruction."}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 109.8s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL209__00_03_15 195.950 201.460}
+ORIG: delta two oh nine turn right ah heading two seven zero direct linden when able and resume your own navigation
+PROC: delta two oh nine turn right ah heading two seven zero direct linden when able and resume your own navigation
+NUMC: Delta 209 turn right ah heading 2 7 0 direct linden when able and resume your own navigation
+PUNC: Delta 209 turn right ah heading 2 7 0 direct linden when able and resume your own navigation.
+T1: Delta two zero nine, turn right heading two seven zero, direct Linden when able, and resume your own navigation.
+T2: Delta 209, turn right heading 270, direct Linden when able, and resume your own navigation.
+C1: (ATC) Delta two zero nine, turn right heading two seven zero, direct Linden when able, and resume your own navigation.
+C2: (DAL209) Delta 209, turn right heading 270, direct Linden when able, and resume your own navigation.
+NOTE:
+    - Source Analysis: The source PUNC text is clear and follows standard aviation phraseology. The use of 'ah' in the original text has been removed as it seems unnecessary in this context and does not add clarity to the instruction. The conversion process maintained the intent and meaning of the original message.
+    - T1 Confidence: High
+    - T1 Corrections: Added commas for natural punctuation, converted numbers to words as per T1 format specifications.
+    - T2 Confidence: High
+    - T2 Corrections: No corrections needed; the original punctuated text was already in a suitable format for conversion to T2 with minor adjustments for punctuation.
+    - Speaker Context: Understanding that DR1-1 (ATC) is instructing DAL209 (Pilot), the language and instructions are appropriate for ATC to pilot communication, including the use of headings and navigation directives. This context ensured that the conversions were made with proper aviation terminology and respect for standard communication protocols between controllers and pilots.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (DAL209)
+        - Speaker Role: ATC
+        - Speaker Position: Approach/Departure
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message is a complete instruction from the controller to the pilot, indicating a clear turn boundary in the conversation sequence.
+        - Info Extractions: {'heading': {'value': 270, 'action': 'turn right'}, 'destination': {'value': 'Linden', 'action': 'direct'}, 'navigation': {'value': 'own navigation', 'action': 'resume'}, 'confidence': 0.9, 'reasoning': 'Standard aviation phraseology is used, making it clear that the pilot is instructed to turn right to a heading of 270 degrees, proceed directly to Linden when able, and then resume their own navigation.'}
+        - Processing Method: llm
+        - Quality Score: 0.90
+        - Timestamp: 195.9s
+
+
+{dca_d1_1 1 dca_d1_1__DAL209__DR1-1__00_03_21 201.980 204.770}
+ORIG: okay we'll go direct linden right now delta two oh nine
+PROC: okay we'll go direct linden right now delta two oh nine
+NUMC: okay we'll go direct linden right now Delta 209
+PUNC: okay we'll go direct linden right now Delta 209.
+T1: Okay, we'll go direct Linden right now, Delta two zero nine.
+T2: Okay, we'll go direct Linden right now, DAL209.
+C1: (ATC) Okay, we'll go direct Linden right now, Delta two zero nine.
+C2: (DAL209) Okay, we'll go direct Linden right now, DAL209.
+NOTE:
+    - Source Analysis: The source PUNC text is of high quality, with proper punctuation and clear communication intent. It directly follows standard aviation phraseology, making the conversion straightforward.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections needed, the original text was already in a conversational format. However, 'two oh nine' was converted to 'two zero nine' for consistency with aviation phraseology standards.
+    - T2 Confidence: High
+    - T2 Corrections: No corrections needed. The airline code 'DAL' was used for Delta, and the flight number '209' was kept as is, following ICAO abbreviations and numerical format standards.
+    - Speaker Context: Understanding that the speaker is the pilot of DAL209 and the listener is the ATC controller DR1-1 was crucial. This context ensured that the terminology and format used in the conversions were appropriate for a pilot-to-controller communication, maintaining the intent and safety standards of aviation communications.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (DAL209)
+        - Speaker Role: ATC
+        - Speaker Position: Center
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with 'okay', which is a common transition word in ATC communications, indicating a new instruction or confirmation. The content of the message also implies a change in flight plan, suggesting a turn boundary.
+        - Info Extractions: {'altitude': None, 'heading': None, 'speed': None, 'frequency': None, 'squawk': None, 'route': {'value': 'Linden', 'action': 'proceed direct'}, 'confidence': 0.9, 'reasoning': "The message explicitly mentions 'go direct Linden', which indicates a change in route. No other aviation-specific information is present in the message."}
+        - Processing Method: llm
+        - Quality Score: 0.85
+        - Timestamp: 202.0s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__AAL1581__00_03_25 205.160 208.220}
+ORIG: american fifteen eighty one turn left heading two niner zero vectors for your climb
+PROC: american fifteen eighty one turn left heading two nine zero vectors for your climb
+NUMC: American 1581 turn left heading 2 9 0 vectors for your climb
+PUNC: American 1581 turn left heading 2 9 0 vectors for your climb.
+T1: American fifteen eighty one, turn left heading two nine zero, vectors for your climb.
+T2: American 1581, turn left heading 290, vectors for your climb.
+C1: (ATC) American fifteen eighty one, turn left heading two nine zero, vectors for your climb.
+C2: (AAL1581) American 1581, turn left heading 290, vectors for your climb.
+NOTE:
+    - Source Analysis: The source PUNC text is clear and well-formatted, indicating a high-quality original message. The aviation phraseology is standard, making it straightforward to convert into both T1 and T2 formats without any significant corrections or assumptions.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections were necessary as the original text was already in a clear and standard format. However, the numbers were converted to words as per the T1 format requirements.
+    - T2 Confidence: High
+    - T2 Corrections: No corrections were necessary. The text was already in a suitable format for conversion to T2, with the numbers remaining as digits and the airline name being used directly.
+    - Speaker Context: Understanding that the speaker is an ATC controller (DR1-1) and the listener is a pilot (AAL1581) helped in maintaining the proper terminology and phraseology for the conversions. The context ensured that the conversions respected aviation communication standards, particularly in how headings and vectors are communicated from ATC to pilots.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (AAL1581)
+        - Speaker Role: ATC
+        - Speaker Position: Approach/Departure
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign ('American fifteen eighty one') followed by an instruction, which is a common pattern in ATC communications indicating the start of a new turn.
+        - Info Extractions: {'heading': {'value': 290, 'action': 'turn left'}, 'confidence': 0.95, 'reasoning': "The message explicitly states 'turn left heading two niner zero', which clearly indicates the intended action and value."}
+        - Processing Method: llm
+        - Quality Score: 0.90
+        - Timestamp: 205.2s
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_03_28 208.840 211.400}
+ORIG: two ninety on the heading american fifteen eighty one
+PROC: two ninety on the heading american fifteen eighty one
+NUMC: 290 on the heading American 1581
+PUNC: 290 on the heading American 1581.
+T1: Two ninety on the heading American fifteen eighty one.
+T2: 290 on the heading AAL1581.
+C1: (AAL1581) Two ninety on the heading American fifteen eighty one.
+C2: (ATC) 290 on the heading AAL1581.
+NOTE:
+    - Source Analysis: The source PUNC text is clear and follows standard aviation communication phraseology. It specifies a heading instruction with the aircraft's callsign, indicating effective communication between ATC and the pilot. The quality of the content allows for straightforward conversion into both T1 and T2 formats without needing significant corrections or assumptions.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections were necessary as the original text already followed standard aviation phraseology. The number '290' was converted to words as 'two ninety', and 'American 1581' was kept with proper capitalization for the airline name.
+    - T2 Confidence: High
+    - T2 Corrections: The airline name 'American' was replaced with its ICAO code 'AAL', and the flight number 'fifteen eighty one' was converted to numerical digits as '1581'. The heading 'two ninety' was converted to numerical digits as '290'.
+    - Speaker Context: The speaker context, where the pilot (AAL1581) is responding to an instruction from ATC (DR1-1), influences the conversion by ensuring that standard aviation phraseology is used. The conversions maintain the intent of the original message, with T1 focusing on conversational readability and T2 adhering to numerical and ICAO abbreviation standards for precision in ATC communications.
+    - Enhanced Analysis:
+        - C1 Speaker: (AAL1581)
+        - C2 Speaker: (ATC)
+        - Speaker Role: Pilot
+        - Speaker Position: AAL1581
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a heading instruction, indicating a new turn or action, and the speaker label changes, suggesting a transition between speakers.
+        - Info Extractions: {'heading': {'value': 290, 'action': 'fly'}, 'confidence': 0.95, 'reasoning': "The message contains a clear heading instruction ('two ninety on the heading'), which is a standard aviation phraseology."}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 208.8s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL209__00_03_35 215.760 219.700}
+ORIG: delta two zero nine contact dulles approach control one three four point two good day
+PROC: delta two zero nine contact dulles approach control one three four point two good day
+NUMC: Delta 2 0 9 contact dulles approach control 1 3 4.2 good day
+PUNC: Delta 2 0 9 contact dulles approach control 1 3 4.2 good day.
+T1: Delta two zero nine, contact Dulles Approach Control one three four point two, good day.
+T2: DAL209, contact Dulles Approach Control 134.2, good day.
+C1: (DR1-1) Delta two zero nine, contact Dulles Approach Control one three four point two, good day.
+C2: (DAL209) DAL209, contact Dulles Approach Control 134.2, good day.
+NOTE:
+    - Source Analysis: The source PUNCTUATED text is clear and well-formatted, with proper use of punctuation and capitalization. The message intent is straightforward, instructing the pilot to contact Dulles Approach Control on a specific frequency.
+    - T1 Confidence: High
+    - T1 Corrections: Added comma after 'nine' for natural speech flow and proper punctuation.
+    - T2 Confidence: High
+    - T2 Corrections: No corrections needed; the original message was already in a suitable format for conversion to T2.
+    - Speaker Context: As the speaker is an ATC controller (DR1-1) and the listener is a pilot (DAL209), the conversion maintained standard ATC phraseology and terminology suitable for the roles. The controller's instruction to contact another approach control indicates a handoff, which is a common procedure in air traffic control.
+    - Enhanced Analysis:
+        - C1 Speaker: (DR1-1)
+        - C2 Speaker: (DAL209)
+        - Speaker Role: Approach
+        - Speaker Position: Dulles Approach Control
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign ('Delta two zero nine') and includes a specific instruction to contact another controller, indicating a transition in communication.
+        - Info Extractions: {'frequency': {'value': 134.2, 'unit': 'MHz', 'confidence': 0.99, 'reasoning': "The message explicitly mentions the frequency 'one three four point two'"}, 'squawk': {'value': None, 'confidence': 0.0, 'reasoning': 'No squawk code is mentioned in the message'}, 'altitude': {'value': None, 'unit': None, 'action': None, 'confidence': 0.0, 'reasoning': 'No altitude information is provided in the message'}, 'heading': {'value': None, 'action': None, 'confidence': 0.0, 'reasoning': 'No heading information is provided in the message'}, 'speed': {'value': None, 'unit': None, 'action': None, 'confidence': 0.0, 'reasoning': 'No speed information is provided in the message'}, 'confidence': 0.95, 'reasoning': 'The message primarily focuses on instructing the aircraft to contact another controller and does not include other aviation-specific details.'}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 215.8s
+
+
+{dca_d1_1 1 dca_d1_1__DAL209__DR1-1__00_03_40 220.260 221.740}
+ORIG: thirty four two so long
+PROC: thirty four two so long
+NUMC: 34 2 so long
+PUNC: 34 2 so long.
+T1: Delta two zero nine, thirty four two so long.
+T2: DAL209, 34 2 so long.
+C1: (DAL209) Delta two zero nine, thirty four two so long.
+C2: (ATC) DAL209, 34 2 so long.
+NOTE:
+    - Source Analysis: The source PUNC text '34 2 so long.' lacks clarity in terms of standard aviation phraseology. The numbers could potentially refer to various aviation parameters (altitude, heading, etc.), but the term 'so long' is not standard and could imply a variety of things including a greeting, a farewell, or something else entirely. This ambiguity makes it challenging to provide accurate conversions to T1 and T2 formats without further context.
+    - T1 Confidence: Medium
+    - T1 Corrections: Added airline name 'Delta' for clarity, converted numbers to words as per T1 format. However, the phrase 'thirty four two so long' is unclear in its meaning within standard aviation phraseology. It seems like it could be related to an altitude or heading but without further context, it's difficult to provide a precise conversion.
+    - T2 Confidence: Low
+    - T2 Corrections: Retained the original numerical values due to uncertainty about their meaning. In standard aviation phraseology, '34 2' could refer to an altitude (e.g., 34,200 feet), a heading, or another parameter, but 'so long' does not fit standard phraseology for clear communication of intentions or statuses between pilots and ATC. A typical conversion would require clearer context.
+    - Speaker Context: The speaker context indicates that DAL209 (a Delta Airlines flight) is communicating with DR1-1 (an ATC position). Typically, pilots would communicate specific intentions, requests, or statuses to ATC using standardized phrases. The provided message does not align well with typical aviation communication protocols, suggesting there might be a misunderstanding or miscommunication in the original message.
+    - Enhanced Analysis:
+        - C1 Speaker: (DAL209)
+        - C2 Speaker: (ATC)
+        - Speaker Role: Pilot
+        - Speaker Position: Aircraft DAL209
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message 'thirty four two so long' is a response from DAL209, indicating a turn boundary as it concludes a transmission.
+        - Info Extractions: {'altitude': {'value': 342, 'unit': 'feet', 'action': 'maintain'}, 'confidence': 0.8, 'reasoning': "The phrase 'thirty four two' likely refers to an altitude of 3,420 feet, but without explicit unit confirmation, confidence is slightly reduced."}
+        - Processing Method: llm
+        - Quality Score: 0.85
+        - Timestamp: 220.3s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__AAL1581__00_04_25 265.030 269.830}
+ORIG: american fifteen eighty one turn left heading two three zero vector ah for your climb
+PROC: american fifteen eighty one turn left heading two three zero vector ah for your climb
+NUMC: American 1581 turn left heading 2 3 0 vector ah for your climb
+PUNC: American 1581 turn left heading 2 3 0 vector ah for your climb.
+T1: American fifteen eighty one, turn left heading two three zero, vector ah for your climb.
+T2: AAL1581, turn left heading 230, vector AH for your climb.
+C1: (ATC) American fifteen eighty one, turn left heading two three zero, vector ah for your climb.
+C2: (AAL1581) AAL1581, turn left heading 230, vector AH for your climb.
+NOTE:
+    - Source Analysis: The source PUNCTUATED text is clear and follows standard aviation phraseology. It correctly identifies the aircraft callsign, provides a directional instruction, specifies a heading, and includes a vectoring instruction for climb.
+    - T1 Confidence: High
+    - T1 Corrections: None needed, converted numbers to words and applied conversational casing.
+    - T2 Confidence: High
+    - T2 Corrections: Applied ICAO abbreviation for airline code (AAL) and numerical format for heading.
+    - Speaker Context: As the speaker is an ATC (DR1-1) addressing a pilot (AAL1581), the language used is appropriate for instructional purposes, providing clear and concise directions for the aircraft's navigation. The conversion maintained this context, ensuring that the terminology and format adhere to standard ATC-pilot communication protocols.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (AAL1581)
+        - Speaker Role: ATC
+        - Speaker Position: Approach/Departure
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign ('American fifteen eighty one') followed by an instruction, which is a common pattern in ATC communications indicating the start of a new turn.
+        - Info Extractions: {'heading': {'value': 230, 'action': 'turn left'}, 'confidence': 0.9, 'reasoning': "The message explicitly states 'turn left heading two three zero', which clearly indicates the intended action and value."}
+        - Processing Method: llm
+        - Quality Score: 0.85
+        - Timestamp: 265.0s
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_04_30 270.720 273.240}
+ORIG: two thirty on the heading american fifteen eighty one
+PROC: two thirty on the heading american fifteen eighty one
+NUMC: 230 on the heading American 1581
+PUNC: 230 on the heading American 1581.
+T1: American fifteen eighty one, two thirty on the heading.
+T2: AAL1581, 230 on the heading.
+C1: (Pilot: AAL1581) American fifteen eighty one, two thirty on the heading.
+C2: (ATC) AAL1581, 230 on the heading.
+NOTE:
+    - Source Analysis: The source PUNC text '230 on the heading American 1581.' is clear and well-structured, indicating a high-quality original message. The use of standard aviation phraseology facilitates accurate conversion to both T1 and T2 formats.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections needed; text was already in a suitable format for conversion to T1. Changed '230' to 'two thirty' and added airline name 'American' as per the specifications.
+    - T2 Confidence: High
+    - T2 Corrections: No corrections needed; text was straightforward for conversion to T2. Changed 'American fifteen eighty one' to 'AAL1581' and kept '230' as is, following ICAO abbreviations and numerical format.
+    - Speaker Context: Understanding that the speaker is AAL1581 (pilot) and the listener is DR1-1 (ATC), it's clear the communication is from the aircraft to air traffic control, which typically involves following specific instructions or reporting positions. This context supports the conversions made, as they adhere to standard aviation communication protocols and terminology used between pilots and controllers.
+    - Enhanced Analysis:
+        - C1 Speaker: (Pilot: AAL1581)
+        - C2 Speaker: (ATC)
+        - Speaker Role: Pilot
+        - Speaker Position: Aircraft
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message is a response from the pilot (AAL1581) to an instruction, indicating a turn boundary in the conversation sequence.
+        - Info Extractions: {'heading': {'value': 230, 'action': 'fly'}, 'confidence': 0.95, 'reasoning': "The message contains standard phraseology 'two thirty on the heading', which indicates that the aircraft should fly a heading of 230 degrees."}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 270.7s
+
+
+{dca_d1_1 1 dca_d1_1__N99G__DR1-1__00_04_59 299.630 302.550}
+ORIG: hello washington aero star two six nine nine golf three thousand
+PROC: hello washington aerostar two six nine nine golf three thousand
+NUMC: hello Washington aerostar 2 6 9 9 Golf 3000
+PUNC: hello Washington aerostar 2 6 9 9 Golf 3000.
+T1: Hello Washington, Aerostar two six nine nine Golf, three thousand.
+T2: Hello Washington, N99G, 3000.
+C1: (N99G/Pilot) Hello Washington, Aerostar two six nine nine Golf, three thousand.
+C2: (ATC) Hello Washington, N99G, 3000.
+NOTE:
+    - Source Analysis: The source PUNC text is clear and follows standard aviation communication structures. However, it lacks conversational flow and uses numerical digits instead of words for numbers. The message intent is straightforward: the pilot of N99G is establishing contact with Washington ATC at an altitude of 3000 feet.
+    - T1 Confidence: High
+    - T1 Corrections: Added comma for natural speech flow, converted numbers to words as per format, and maintained proper capitalization for the airline name.
+    - T2 Confidence: High
+    - T2 Corrections: Applied ICAO aircraft identification format (N99G) and converted words to numerical digits as required for the T2 format.
+    - Speaker Context: The speaker context significantly influences the conversion, as understanding that N99G is a general aviation aircraft (given its callsign format) helps in deciding not to use airline codes like those used for commercial flights. The role of the speaker as a pilot and the listener as ATC also dictates the appropriate level of formality and the specific phraseology used in both T1 and T2 formats.
+    - Enhanced Analysis:
+        - C1 Speaker: (N99G/Pilot)
+        - C2 Speaker: (ATC)
+        - Speaker Role: Pilot
+        - Speaker Position: Aircraft N99G
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a greeting ('hello') and introduces the aircraft call sign ('Aerostar two six nine nine Golf'), indicating the beginning of a new communication turn.
+        - Info Extractions: {'altitude': {'value': 3000, 'unit': 'feet', 'action': 'report'}, 'confidence': 0.9, 'reasoning': "The message explicitly mentions 'three thousand', which is a standard way to report altitude in aviation communication."}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 299.6s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__N99G__00_05_05 305.410 309.650}
+ORIG: aero star nine nine golf fly heading three three zero climb and maintain four thousand
+PROC: aerostar nine nine golf fly heading three three zero climb and maintain four thousand
+NUMC: aerostar 9 9 Golf fly heading 3 3 0 climb and maintain 4000
+PUNC: aerostar 9 9 Golf fly heading 3 3 0 climb and maintain 4000.
+T1: Aero Star nine nine golf, fly heading three three zero, climb and maintain four thousand.
+T2: Aerostar N99G, fly heading 330, climb and maintain FL4000.
+C1: (ATC) Aero Star nine nine golf, fly heading three three zero, climb and maintain four thousand.
+C2: (Aero Star 99G) Aerostar N99G, fly heading 330, climb and maintain FL4000.
+NOTE:
+    - Source Analysis: The source PUNC text is clear and follows standard aviation phraseology. The message instructs the pilot to fly a specific heading and climb to a specified altitude, which is directly convertible to both T1 and T2 formats without any ambiguities.
+    - T1 Confidence: High
+    - T1 Corrections: None needed, direct conversion to conversational format with proper capitalization and word numbers.
+    - T2 Confidence: High
+    - T2 Corrections: Applied ICAO aircraft identifier 'N99G', numerical heading '330', and flight level 'FL4000' for standardization.
+    - Speaker Context: As the speaker is an ATC controller (DR1-1) issuing instructions to a pilot (N99G), the language and format conversions are tailored to match standard ATC communication protocols. The use of specific headings, altitudes, and aircraft identifiers reflects typical ATC instruction clarity and precision.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (Aero Star 99G)
+        - Speaker Role: ATC
+        - Speaker Position: Approach/Departure
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign ('Aero Star nine nine golf') and contains a clear instruction ('fly heading three three zero climb and maintain four thousand'), indicating the beginning of a new turn.
+        - Info Extractions: {'altitude': {'value': 4000, 'unit': 'feet', 'action': 'climb and maintain'}, 'heading': {'value': 330, 'action': 'fly'}, 'speed': None, 'frequency': None, 'squawk': None, 'confidence': 0.9, 'reasoning': "The message clearly states the altitude ('four thousand') and heading ('three three zero'), but does not mention speed, frequency, or squawk code."}
+        - Processing Method: llm
+        - Quality Score: 0.85
+        - Timestamp: 305.4s
+
+
+{dca_d1_1 1 dca_d1_1__N99G__DR1-1__00_05_09 309.730 311.460}
+ORIG: three three zero and four thousand
+PROC: three three zero and four thousand
+NUMC: 3 3 0 and 4000
+PUNC: 3 3 0 and 4000.
+T1: Three three zero and four thousand.
+T2: 330 and FL4000.
+C1: (N99G) Three three zero and four thousand.
+C2: (ATC) 330 and FL4000.
+NOTE:
+    - Source Analysis: The source PUNCTUATED text '3 3 0 and 4000.' appears to be of high quality with clear and concise aviation phraseology, directly convertible to both T1 and T2 formats without significant reinterpretation. The use of standard numerical values for heading and altitude simplifies the conversion process.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections needed, as the original text already uses standard aviation phraseology for altitude and heading. The conversion to conversational format simply maintains this clarity.
+    - T2 Confidence: High
+    - T2 Corrections: Converted 'three three zero' to numerical digits as '330', which is standard for headings. Also, converted 'four thousand' to 'FL4000', following ICAO standards for flight levels.
+    - Speaker Context: Given that the speaker is N99G (pilot) communicating with DR1-1 (ATC), the conversion maintains a focus on clarity and adherence to aviation standards, ensuring that the intent of the communication—reporting or confirming an altitude and possibly a heading—is preserved in both T1 and T2 formats.
+    - Enhanced Analysis:
+        - C1 Speaker: (N99G)
+        - C2 Speaker: (ATC)
+        - Speaker Role: Pilot
+        - Speaker Position: Aircraft N99G
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message appears to be a response from the pilot (N99G) to a previous instruction or query, indicating a turn boundary in the conversation sequence.
+        - Info Extractions: {'altitude': {'value': 4000, 'unit': 'FL', 'action': 'maintain'}, 'confidence': 0.9, 'reasoning': "The message contains a clear altitude instruction ('330 and FL4000') which can be extracted with high confidence."}
+        - Processing Method: llm
+        - Quality Score: 0.85
+        - Timestamp: 309.7s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL743__AIRCRAFT_ON_ANOTHER_FREQUENCY__00_05_11 311.890 315.860}
+ORIG: delta seven forty three washington departure control climb and maintain flight level two three zero
+PROC: delta seven forty three washington departure control climb and maintain flight level two three zero
+NUMC: Delta 743 Washington departure control climb and maintain flight level 2 3 0
+PUNC: Delta 743 Washington departure control climb and maintain flight level 2 3 0.
+T1: Delta seven four three, Washington Departure Control, climb and maintain flight level two three zero.
+T2: DAL743, Washington Departure Control, climb and maintain FL230.
+C1: (ATC) Delta seven four three, Washington Departure Control, climb and maintain flight level two three zero.
+C2: (Delta 743) DAL743, Washington Departure Control, climb and maintain FL230.
+NOTE:
+    - Source Analysis: The source PUNCTUATED text appears to be of high quality with proper aviation phraseology. However, it lacked natural punctuation and used a mix of numerical and word formats. The conversion to T1 and T2 formats required adjustments to meet the specific requirements of each format.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections needed, but added comma for natural punctuation and ensured proper capitalization of 'Washington Departure Control' and full airline name 'Delta'.
+    - T2 Confidence: High
+    - T2 Corrections: Converted 'flight level two three zero' to standard ICAO abbreviation 'FL230' and used airline code 'DAL' for the aircraft callsign.
+    - Speaker Context: The speaker context as ATC (DR1-1) issuing instructions to a pilot (DAL743) influenced the conversion by ensuring that standard ATC phraseology was used and that the language was clear and direct, as is typical in ATC communications.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (Delta 743)
+        - Speaker Role: Departure
+        - Speaker Position: Washington Departure Control
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign (Delta seven forty three) followed by an instruction from Washington Departure Control, indicating a new turn in the conversation.
+        - Info Extractions: {'altitude': {'value': 230, 'unit': 'FL', 'action': 'climb and maintain'}, 'heading': None, 'speed': None, 'frequency': None, 'squawk': None, 'confidence': 0.9, 'reasoning': 'The message clearly instructs the aircraft to climb and maintain flight level 230, which is a standard aviation instruction.'}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 311.9s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__N99G__00_06_34 394.610 398.230}
+ORIG: aero star nine nine golf climb and maintain ah six thousand
+PROC: aerostar nine nine golf climb and maintain ah six thousand
+NUMC: aerostar 9 9 Golf climb and maintain ah 6000
+PUNC: aerostar 9 9 Golf climb and maintain ah 6000.
+T1: Aerostar nine nine golf, climb and maintain six thousand.
+T2: N99G, climb and maintain 6000.
+C1: (ATC) Aerostar nine nine golf, climb and maintain six thousand.
+C2: (N99G) N99G, climb and maintain 6000.
+NOTE:
+    - Source Analysis: The punctuated source text is clear and follows standard aviation phraseology. The message is a climb instruction from ATC to an aircraft, specifying the target altitude as six thousand feet.
+    - T1 Confidence: High
+    - T1 Corrections: None needed, straightforward conversion to conversational format.
+    - T2 Confidence: High
+    - T2 Corrections: Applied ICAO aircraft identifier 'N99G' and numerical altitude '6000'.
+    - Speaker Context: As the speaker is an ATC controller (DR1-1) issuing instructions to a pilot (N99G), the terminology used matches the expected protocol for such communications, with direct and clear instructions regarding altitude changes.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (N99G)
+        - Speaker Role: ATC
+        - Speaker Position: Approach/Departure
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign (Aerostar nine nine golf) and contains a clear instruction (climb and maintain six thousand), indicating the beginning of a new turn.
+        - Info Extractions: {'altitude': {'value': 6000, 'unit': 'feet', 'action': 'climb and maintain'}, 'confidence': 0.95, 'reasoning': "The message explicitly states 'climb and maintain six thousand', which clearly indicates the altitude instruction."}
+        - Processing Method: llm
+        - Quality Score: 0.90
+        - Timestamp: 394.6s
+
+
+{dca_d1_1 1 dca_d1_1__N99G__DR1-1__00_06_38 398.310 399.800}
+ORIG: nine nine golf out of four for six
+PROC: nine nine golf out of four for six
+NUMC: 9 9 Golf out of 4 for 6
+PUNC: 9 9 Golf out of 4 for 6.
+T1: November nine nine Golf out of four thousand for six.
+T2: N99G out of 4000 for 6.
+C1: (N99G) November nine nine Golf out of four thousand for six.
+C2: (Pilot of N99G) N99G out of 4000 for 6.
+NOTE:
+    - Source Analysis: The source PUNC text '9 9 Golf out of 4 for 6.' appears to be a simplified version of aviation communication. The lack of standard aviation phraseology, such as using 'November' for the letter 'N' in callsigns and not explicitly stating the unit of altitude (feet), required some assumptions for accurate conversion. Given the context from previous messages, it seems the communication is about an aircraft's altitude and possibly its heading or other instructions.
+    - T1 Confidence: High
+    - T1 Corrections: Added full callsign pronunciation 'November' for clarity, converted numbers to words as per T1 format, and corrected altitude to 'four thousand' based on aviation standard phraseology.
+    - T2 Confidence: High
+    - T2 Corrections: Converted word numbers to digits as per T2 format, maintained ICAO aircraft identifier 'N99G', and kept the rest of the message intact with minor punctuation adjustment for clarity.
+    - Speaker Context: The speaker context, with N99G being the pilot and DR1-1 being ATC, significantly influenced the conversion by implying that standard aviation phraseology and clarity are crucial. The conversions aimed to enhance readability and adherence to aviation communication standards while maintaining the original message's intent.
+    - Enhanced Analysis:
+        - C1 Speaker: (N99G)
+        - C2 Speaker: (Pilot of N99G)
+        - Speaker Role: Pilot
+        - Speaker Position: Aircraft N99G
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign (November nine nine Golf) and reports an altitude, indicating a new transmission from the pilot.
+        - Info Extractions: {'altitude': {'value': 4000, 'unit': 'feet', 'action': 'report'}, 'confidence': 0.9, 'reasoning': "The phrase 'out of four thousand' indicates the aircraft is reporting its current altitude as 4,000 feet."}
+        - Processing Method: llm
+        - Quality Score: 0.85
+        - Timestamp: 398.3s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__AAL1581__00_06_41 401.500 406.380}
+ORIG: american fifteen eighty one turn right heading three two zero join j one forty nine resume your own navigation
+PROC: american fifteen eighty one turn right heading three two zero join j one forty nine resume your own navigation
+NUMC: American 1581 turn right heading 3 2 0 join j 149 resume your own navigation
+PUNC: American 1581 turn right heading 3 2 0 join j 149 resume your own navigation.
+T1: American fifteen eighty one, turn right heading three two zero, join Juliet one four nine, resume your own navigation.
+T2: American 1581, turn right heading 320, join J149, resume your own navigation.
+C1: (ATC) American fifteen eighty one, turn right heading three two zero, join Juliet one four nine, resume your own navigation.
+C2: (AAL1581) American 1581, turn right heading 320, join J149, resume your own navigation.
+NOTE:
+    - Source Analysis: The source PUNC text appears to be of high quality with correct aviation phraseology and terminology. The message is clear and concise, following standard ATC communication protocols.
+    - T1 Confidence: High
+    - T1 Corrections: Added commas for natural punctuation and changed 'j' to 'Juliet' for phonetic alphabet consistency.
+    - T2 Confidence: High
+    - T2 Corrections: No corrections needed as the original punctuated text was already in a suitable format for conversion to T2.
+    - Speaker Context: The speaker context as DR1-1 (ATC) issuing instructions to AAL1581 (Pilot) influenced the conversion by ensuring that standard ATC phraseology and formatting were applied, maintaining clarity and safety in the communication.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (AAL1581)
+        - Speaker Role: ATC
+        - Speaker Position: Center/Approach
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign ('American fifteen eighty one') and contains a clear instruction ('turn right heading three two zero'), indicating the beginning of a new turn.
+        - Info Extractions: {'heading': {'value': 320, 'action': 'turn right'}, 'route': {'value': 'J149', 'action': 'join'}, 'navigation': {'value': 'own navigation', 'action': 'resume'}, 'confidence': 0.9, 'reasoning': 'The message contains standard aviation phraseology, making it easy to extract relevant information.'}
+        - Processing Method: llm
+        - Quality Score: 0.85
+        - Timestamp: 401.5s
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_06_47 407.450 410.790}
+ORIG: three twenty to join the airway american fifteen eighty one
+PROC: three twenty to join the airway american fifteen eighty one
+NUMC: 320 to join the airway American 1581
+PUNC: 320 to join the airway American 1581.
+T1: American fifteen eighty one, three twenty to join the airway.
+T2: AAL1581, 320 to join the airway.
+C1: (Pilot-AAL1581) American fifteen eighty one, three twenty to join the airway.
+C2: (ATC) AAL1581, 320 to join the airway.
+NOTE:
+    - Source Analysis: The source PUNC text is clear and concise. However, it lacks the proper callsign format typically used in ATC communications. The conversion to T1 and T2 formats aimed to maintain aviation safety standards by including the full airline name and call sign in a conversational tone for T1, and applying ICAO abbreviations for T2.
+    - T1 Confidence: High
+    - T1 Corrections: No significant corrections were made, but added 'American fifteen eighty one' for clarity and proper callsign format.
+    - T2 Confidence: High
+    - T2 Corrections: Used airline code 'AAL' for American Airlines as per ICAO standards, and converted 'three twenty' to numerical digits '320'.
+    - Speaker Context: Understanding that the speaker is the pilot of American Airlines flight 1581 (AAL1581) and the listener is an ATC controller (DR1-1) helped in maintaining proper terminology and format. The communication flow suggests a response to a previous instruction, thus the inclusion of the callsign and the specific action ('three twenty to join the airway') is crucial for clarity and safety.
+    - Enhanced Analysis:
+        - C1 Speaker: (Pilot-AAL1581)
+        - C2 Speaker: (ATC)
+        - Speaker Role: Pilot
+        - Speaker Position: Aircraft AAL1581
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message is a response from the pilot (AAL1581) to an instruction, indicating a turn boundary in the conversation sequence.
+        - Info Extractions: {'heading': {'value': '320', 'action': 'join'}, 'confidence': 0.8, 'reasoning': "The message contains standard phraseology 'three twenty to join the airway', indicating a heading of 320 degrees to join the airway."}
+        - Processing Method: llm
+        - Quality Score: 0.85
+        - Timestamp: 407.4s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__AAL1581__00_06_57 417.450 421.320}
+ORIG: american fifteen eighty one contact dulles approach one three four point two good day
+PROC: american fifteen eighty one contact dulles approach one three four point two good day
+NUMC: American 1581 contact dulles approach 1 3 4.2 good day
+PUNC: American 1581 contact dulles approach 1 3 4.2 good day.
+T1: American fifteen eighty one, contact Dulles Approach one three four point two, good day.
+T2: American 1581, contact Dulles Approach 134.2, good day.
+C1: (ATC) American fifteen eighty one, contact Dulles Approach one three four point two, good day.
+C2: (AAL1581) American 1581, contact Dulles Approach 134.2, good day.
+NOTE:
+    - Source Analysis: The source PUNC text is of high quality with clear and standard aviation phraseology. It correctly identifies the airline and flight number (American 1581), provides a specific instruction (contact Dulles Approach), and includes the necessary frequency (134.2). The text does not require any assumptions or significant corrections for conversion.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections needed, the conversion maintained the original intent and meaning while following T1 format specifications.
+    - T2 Confidence: High
+    - T2 Corrections: No corrections needed, the conversion accurately applied numerical digits and maintained proper casing and punctuation as per T2 format specifications.
+    - Speaker Context: The speaker context, with DR1-1 as the ATC position and AAL1581 as the pilot, influenced the conversion by ensuring that the terminology and instructions are appropriate for an ATC to pilot communication. The use of 'good day' at the end is a common professional courtesy in such communications, fitting for the speaker's role.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (AAL1581)
+        - Speaker Role: Approach
+        - Speaker Position: Dulles Approach Controller
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message is a clear instruction from the controller to the pilot, indicating a transition in communication. The phrase 'contact Dulles Approach' suggests a handover to a different frequency, which typically marks a turn boundary.
+        - Info Extractions: {'frequency': {'value': 134.2, 'unit': 'MHz', 'confidence': 0.99, 'reasoning': "The frequency is explicitly mentioned in the message as 'one three four point two' which corresponds to 134.2 MHz"}, 'squawk': {'value': None, 'confidence': 0.0, 'reasoning': 'No squawk code is mentioned in the message'}, 'altitude': {'value': None, 'unit': None, 'action': None, 'confidence': 0.0, 'reasoning': 'No altitude information is provided in the message'}, 'heading': {'value': None, 'action': None, 'confidence': 0.0, 'reasoning': 'No heading or directional instruction is given in the message'}, 'speed': {'value': None, 'unit': None, 'action': None, 'confidence': 0.0, 'reasoning': 'No speed adjustment is mentioned in the message'}, 'confidence': 0.95, 'reasoning': 'The extraction focuses on the explicit mention of frequency and the absence of other aviation parameters like altitude, heading, or speed.'}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 417.4s
+
+
+{dca_d1_1 1 dca_d1_1__AAL1581__DR1-1__00_07_01 421.680 423.860}
+ORIG: one thirty four two american fifteen eighty one so long
+PROC: one thirty four two american fifteen eighty one so long
+NUMC: 134 2 American 1581 so long
+PUNC: 134 2 American 1581 so long.
+T1: One three four point two, American fifteen eighty one, so long.
+T2: 134.2, AAL1581, so long.
+C1: (AAL1581) One three four point two, American fifteen eighty one, so long.
+C2: (ATC) 134.2, AAL1581, so long.
+NOTE:
+    - Source Analysis: The source PUNCTUATED text appears to be a basic communication from the pilot to ATC. The content is straightforward, with the aircraft call sign and frequency. However, the phrase 'so long' is informal; in aviation communications, a more standard closing would be expected, such as 'good day' or 'good night.' The conversion aimed to maintain the original intent while adapting to the required formats.
+    - T1 Confidence: High
+    - T1 Corrections: Added comma for natural speech flow, converted numbers to words as required.
+    - T2 Confidence: High
+    - T2 Corrections: Converted words to numerical digits and used airline code as per ICAO abbreviations.
+    - Speaker Context: Understanding that the speaker is the pilot of American Airlines flight 1581 and the listener is an ATC controller influenced the conversion by ensuring the use of proper aviation terminology and format. For T1, conversational tone was prioritized, while for T2, adherence to numerical and ICAO standards was maintained.
+    - Enhanced Analysis:
+        - C1 Speaker: (AAL1581)
+        - C2 Speaker: (ATC)
+        - Speaker Role: Pilot
+        - Speaker Position: AAL1581
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message ends with 'so long', which is a standard phrase used to indicate the end of a transmission or a turn boundary in aviation communication.
+        - Info Extractions: {'frequency': {'value': 134.2, 'unit': 'MHz', 'action': None}, 'confidence': 0.8, 'reasoning': "The message mentions 'one thirty four two', which is likely a frequency in MHz, but there is no clear action associated with it (e.g., 'contact', 'monitor', etc.)."}
+        - Processing Method: llm
+        - Quality Score: 0.85
+        - Timestamp: 421.7s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__DAL743__00_07_52 472.510 479.550}
+ORIG: delta seven forty three proceed direct linden resume your own navigation contact ah the washington center one two zero point six five
+PROC: delta seven forty three proceed direct linden resume your own navigation contact ah the washington center one two zero point six five
+NUMC: Delta 743 proceed direct linden resume your own navigation contact ah the Washington center 1 2 0.6 5
+PUNC: Delta 743 proceed direct linden resume your own navigation contact ah the Washington center 1 2 0.6 5.
+T1: Delta seven four three, proceed direct Linden, resume your own navigation, contact Washington Center one two zero point six five.
+T2: DAL743, proceed direct Linden, resume your own navigation, contact Washington Center 120.65.
+C1: (ATC) Delta seven four three, proceed direct Linden, resume your own navigation, contact Washington Center one two zero point six five.
+C2: (DAL743) DAL743, proceed direct Linden, resume your own navigation, contact Washington Center 120.65.
+NOTE:
+    - Source Analysis: The source PUNCTUATED text appears to be a standard ATC instruction with proper phraseology, although it contains minor informal elements like 'ah'. The conversion required adjusting punctuation for natural flow in T1 format and applying ICAO standards in T2 format.
+    - T1 Confidence: High
+    - T1 Corrections: Added comma for natural speech flow and proper punctuation. Changed 'ah' to standard phraseology.
+    - T2 Confidence: High
+    - T2 Corrections: Standardized format with airline code and numerical frequency. Removed 'ah' for formal communication.
+    - Speaker Context: As the speaker is an ATC controller (DR1-1) communicating with a pilot (DAL743), the conversions ensured that standard ATC phraseology and terminology were used, maintaining clarity and safety in the communication. The listener's role as a pilot also justified the use of direct instructions and clear navigation guidance.
+    - Enhanced Analysis:
+        - C1 Speaker: (ATC)
+        - C2 Speaker: (DAL743)
+        - Speaker Role: Center
+        - Speaker Position: Washington Center
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign (Delta seven forty three) and contains a clear instruction (proceed direct Linden), indicating a new turn in the conversation.
+        - Info Extractions: {'altitude': None, 'heading': None, 'speed': None, 'frequency': {'value': 120.65, 'unit': 'MHz'}, 'squawk': None, 'confidence': 0.8, 'reasoning': 'The message contains a clear instruction to contact Washington Center on a specific frequency (120.65 MHz), but does not mention altitude, heading, or speed.'}
+        - Processing Method: llm
+        - Quality Score: 0.90
+        - Timestamp: 472.5s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__N99G__00_08_19 499.410 505.640}
+ORIG: aero star nine nine golf turn left heading two seven zero contact dulles approach one two six point six five expect vectors casanova
+PROC: aerostar nine nine golf turn left heading two seven zero contact dulles approach one two six point six five expect vectors casanova
+NUMC: aerostar 9 9 Golf turn left heading 2 7 0 contact dulles approach 1 2 6.6 5 expect vectors casanova
+PUNC: aerostar 9 9 Golf turn left heading 2 7 0 contact dulles approach 1 2 6.6 5 expect vectors casanova.
+T1: Aerostar nine nine golf, turn left heading two seven zero, contact Dulles Approach one two six point six five, expect vectors Casanova.
+T2: N99G, turn left heading 270, contact Dulles Approach 126.65, expect vectors Casanova.
+C1: (DR1-1) Aerostar nine nine golf, turn left heading two seven zero, contact Dulles Approach one two six point six five, expect vectors Casanova.
+C2: (Aerostar 99G) N99G, turn left heading 270, contact Dulles Approach 126.65, expect vectors Casanova.
+NOTE:
+    - Source Analysis: The source PUNC text appears to be of high quality with clear and standard aviation phraseology. The message includes a specific instruction (turn left heading 270), a communication directive (contact Dulles Approach on a specific frequency), and an expectation for further guidance (expect vectors Casanova), which are all typical components of ATC communications.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections were necessary as the original text was clear and standard. However, for T1 format, 'Aerostar' should be capitalized as it refers to a specific aircraft or flight identity, and 'Dulles Approach' is properly capitalized as it is a specific ATC facility.
+    - T2 Confidence: High
+    - T2 Corrections: The callsign 'Aerostar nine nine golf' was converted to its ICAO standard format 'N99G'. The heading was changed from words to numerical digits as per T2 format requirements. 'Dulles Approach' frequency was standardized to include the decimal point for clarity, even though in voice communications it would typically be said as 'one two six point six five'.
+    - Speaker Context: The speaker context, with DR1-1 as the ATC controller and N99G as the pilot, significantly influences the conversion. The use of standard ATC phraseology and the inclusion of specific instructions and expectations are consistent with ATC communications. Understanding this context helps in maintaining the intent and clarity of the original message through the conversions.
+    - Enhanced Analysis:
+        - C1 Speaker: (DR1-1)
+        - C2 Speaker: (Aerostar 99G)
+        - Speaker Role: Approach
+        - Speaker Position: Dulles Approach
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign (Aerostar nine nine golf) and contains a new instruction, indicating a turn boundary.
+        - Info Extractions: {'heading': {'value': 270, 'action': 'turn left'}, 'frequency': {'value': 126.65, 'unit': 'MHz'}, 'confidence': 0.95, 'reasoning': 'The message contains standard phraseology for instructing an aircraft to turn and contact a new frequency.'}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 499.4s
+
+
+{dca_d1_1 1 dca_d1_1__N99G__DR1-1__LONG_PAUSE_OF_MORE_THAN_SEVEN_MINUTES__00_08_26 506.230 508.310}
+ORIG: one two six six five and two seven zero
+PROC: one two six six five and two seven zero
+NUMC: 1 2 6 6 5 and 2 7 0
+PUNC: 1 2 6 6 5 and 2 7 0.
+T1: One two six six five and two seven zero.
+T2: 12665 and 270.
+C1: (Unknown) One two six six five and two seven zero.
+C2: (Unknown) 12665 and 270.
+NOTE:
+    - Source Analysis: The source PUNC text '1 2 6 6 5 and 2 7 0.' appears to be a report or request of numbers, possibly coordinates, headings, or codes, but without additional context, the exact meaning or standard aviation phraseology application is uncertain. The text lacks specific aviation terminology or phrases that would typically be used in ATC communications, suggesting it might be a fragment of a larger conversation or a specific type of report.
+    - T1 Confidence: High
+    - T1 Corrections: None needed, the original text is already in a clear numerical format which was directly convertible to words for T1.
+    - T2 Confidence: High
+    - T2 Corrections: The numbers were already provided in a numeric format, making the conversion straightforward. However, without additional context (such as specific instructions or standard phraseologies related to these numbers), the conversion assumes they are being reported or requested as is.
+    - Speaker Context: The speaker context, with N99G (pilot) communicating to DR1-1 (ATC), suggests that the numbers could be related to navigational instructions, clearances, or acknowledgments. However, the lack of standard aviation phraseology in the original message makes it challenging to apply typical conversions directly. The conversion assumes a straightforward report or request without altering the original intent, which might not fully align with standard ATC communication protocols.
+    - Enhanced Analysis:
+        - C1 Speaker: (Unknown)
+        - C2 Speaker: (Unknown)
+        - Speaker Role: Unknown
+        - Speaker Position: Unknown
+        - Turn Boundary: Yes (0.70)
+        - Turn Reasoning: Hybrid: LLM conf=0.30, Rule conf=0.70
+        - Info Extractions: {}
+        - Processing Method: hybrid
+        - Quality Score: 0.57
+        - Timestamp: 506.2s
+
+
+{dca_d1_1 1 dca_d1_1__USA237__DR1-1__00_16_55 1015.640 1019.710}
+ORIG: good afternoon washington u s air two thirty seven is out of one thousand five hundred for five thousand
+PROC: good afternoon washington u_s_air two thirty seven is out of one thousand five hundred for five thousand
+NUMC: good afternoon Washington USAir 237 is out of 1500 for 5000
+PUNC: good afternoon Washington USAir 237 is out of 1500 for 5000.
+T1: Good afternoon Washington, U S Air two thirty seven is out of one thousand five hundred for five thousand.
+T2: Good afternoon Washington, USA237 is out of 1500 for 5000.
+C1: (USA237) Good afternoon Washington, U S Air two thirty seven is out of one thousand five hundred for five thousand.
+C2: (Washington ATC) Good afternoon Washington, USA237 is out of 1500 for 5000.
+NOTE:
+    - Source Analysis: The source PUNC text appears to be a clear and standard aviation communication. The phraseology is correct, and the structure follows typical pilot-to-ATC communication patterns. The altitude report 'out of one thousand five hundred for five thousand' indicates a climb from 1500 feet to 5000 feet, which is a common reporting format in aviation.
+    - T1 Confidence: High
+    - T1 Corrections: No corrections needed, the conversion to conversational format with words only was straightforward.
+    - T2 Confidence: High
+    - T2 Corrections: No corrections needed, the conversion to numerical format with ICAO abbreviations was direct.
+    - Speaker Context: The speaker context as USA237 (pilot) communicating with DR1-1 (ATC) influenced the conversion by ensuring that standard pilot phraseology and reporting formats were used. The conversions maintained the intent of the original message, focusing on clarity and adherence to aviation communication standards.
+    - Enhanced Analysis:
+        - C1 Speaker: (USA237)
+        - C2 Speaker: (Washington ATC)
+        - Speaker Role: Pilot
+        - Speaker Position: Aircraft USA237
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a greeting ('good afternoon') and introduces a new topic (altitude report), indicating a turn boundary.
+        - Info Extractions: {'altitude': {'value': 1500, 'unit': 'feet', 'action': 'out of'}, 'altitude_target': {'value': 5000, 'unit': 'feet', 'action': 'climb to'}, 'confidence': 0.9, 'reasoning': "The pilot reports their current altitude ('out of 1500') and target altitude ('for 5000'), indicating a climb."}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 1015.6s
+
+
+{dca_d1_1 1 dca_d1_1__DR1-1__USA237__00_17_00 1020.060 1024.339}
+ORIG: u s air two thirty seven washington departure radar contact climb and maintain one five thousand
+PROC: u_s_air two thirty seven washington departure radar contact climb and maintain one five thousand
+NUMC: USAir 237 Washington departure radar contact climb and maintain 1 5000
+PUNC: USAir 237 Washington departure radar contact climb and maintain 1 5000.
+T1: USAir two thirty seven, Washington departure, radar contact, climb and maintain five thousand.
+T2: USA237, Washington Departure, radar contact, climb and maintain FL050.
+C1: (DR1-1) USAir two thirty seven, Washington departure, radar contact, climb and maintain five thousand.
+C2: (USA237) USA237, Washington Departure, radar contact, climb and maintain FL050.
+NOTE:
+    - Source Analysis: The source PUNC text appears to be a standard ATC instruction with good quality and content. It includes essential elements such as the aircraft identifier, departure point, and altitude instructions. However, it lacked proper formatting and aviation-specific terminology in its original form.
+    - T1 Confidence: High
+    - T1 Corrections: Converted numbers to words, applied conversational casing, and ensured proper punctuation.
+    - T2 Confidence: High
+    - T2 Corrections: Applied ICAO abbreviations for flight level (FL050), maintained numerical digits for the aircraft identifier, and ensured proper casing.
+    - Speaker Context: The speaker context, being an ATC controller (DR1-1) instructing a pilot (USA237), significantly influenced the conversion to ensure that the terminology and phraseology used were appropriate for the controller-pilot communication. This included using standard ATC phraseology like 'radar contact' and 'climb and maintain', which are critical for clear and safe communication in aviation.
+    - Enhanced Analysis:
+        - C1 Speaker: (DR1-1)
+        - C2 Speaker: (USA237)
+        - Speaker Role: Departure
+        - Speaker Position: Washington Departure Controller
+        - Turn Boundary: Yes (0.90)
+        - Turn Reasoning: The message starts with a call sign (USAir two thirty seven) and a new instruction, indicating a turn boundary.
+        - Info Extractions: {'altitude': {'value': 15000, 'unit': 'feet', 'action': 'climb and maintain'}, 'confidence': 0.95, 'reasoning': "The message explicitly states 'climb and maintain one five thousand', which is a standard phraseology for instructing an aircraft to climb to and maintain a specific altitude."}
+        - Processing Method: llm
+        - Quality Score: 0.92
+        - Timestamp: 1020.1s
+
+

@@ -6,7 +6,6 @@
 .cursorrules
 .cursorconfig
 atc_llama/
-data/
 results/
 unsloth_compiled_cache/
 __pycache__

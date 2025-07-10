@@ -1,0 +1,93 @@
+{
+  "conversation_summary": {
+    "active_speakers": {
+      "DR1-1": {
+        "role": "Departure",
+        "position_name": "Washington Departure",
+        "last_seen": 1020.06
+      },
+      "DAL209": {
+        "role": "Pilot",
+        "position_name": null,
+        "last_seen": 220.26
+      },
+      "AAL1581": {
+        "role": "Pilot",
+        "position_name": null,
+        "last_seen": 421.68
+      },
+      "N99G": {
+        "role": "Pilot",
+        "position_name": null,
+        "last_seen": 506.23
+      },
+      "USA237": {
+        "role": "Pilot",
+        "position_name": null,
+        "last_seen": 1015.64
+      }
+    },
+    "current_phase": "Takeoff Sequence",
+    "primary_aircraft": "DAL209",
+    "total_messages": 30,
+    "expected_sequence": ["Ground", "Tower", "Departure"]
+  },
+  "message_statistics": {
+    "total_messages": 30,
+    "total_turn_boundaries": 30,
+    "total_info_extractions": 21
+  },
+  "speaker_statistics": {
+    "DR1-1": {
+      "role": "Departure",
+      "position_name": "Washington Departure",
+      "total_messages": 15,
+      "turn_boundaries": 15
+    },
+    "DAL209": {
+      "role": "Pilot",
+      "position_name": null,
+      "total_messages": 4,
+      "turn_boundaries": 4
+    },
+    "AAL1581": {
+      "role": "Pilot",
+      "position_name": null,
+      "total_messages": 6,
+      "turn_boundaries": 6
+    },
+    "N99G": {
+      "role": "Pilot",
+      "position_name": null,
+      "total_messages": 4,
+      "turn_boundaries": 4
+    },
+    "USA237": {
+      "role": "Pilot",
+      "position_name": null,
+      "total_messages": 1,
+      "turn_boundaries": 1
+    }
+  },
+  "turn_analysis": {
+    "total_turns_detected": 30,
+    "average_confidence": 0.7799999999999997
+  },
+  "information_extraction_summary": {
+    "heading": {
+      "total_extractions": 9,
+      "unique_values": 7,
+      "values": ["230", "270", "280", "290", "240", "330", "320"]
+    },
+    "altitude": {
+      "total_extractions": 7,
+      "unique_values": 6,
+      "values": ["230", "170", "050", "020", "6000", "4000"]
+    },
+    "frequency": {
+      "total_extractions": 5,
+      "unique_values": 3,
+      "values": ["134.2", "120.65", "126.65"]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "total_messages": 30,
+    "processing_time": 1752182407.0027711,
+    "average_quality_score": 0.8805000000000003
+  },
+  "quality_distribution": {
+    "excellent": 19,
+    "good": 10,
+    "fair": 1,
+    "poor": 0
+  },
+  "method_comparison": {
+    "llm_only": 29,
+    "rule_only": 0,
+    "hybrid": 1
+  },
+  "turn_boundary_analysis": {
+    "total_turns": 30,
+    "avg_confidence": 0.8966666666666663,
+    "high_confidence_turns": 29
+  },
+  "speaker_classification": {
+    "roles_identified": {
+      "ATC": 10,
+      "Pilot": 12,
+      "Departure": 3,
+      "Approach": 3,
+      "Center": 1,
+      "Unknown": 1
+    },
+    "avg_confidence": 0.8816666666666665
+  },
+  "information_extraction": {
+    "types_extracted": {
+      "heading": 18,
+      "confidence": 29,
+      "reasoning": 29,
+      "altitude": 16,
+      "destination": 1,
+      "navigation": 2,
+      "speed": 6,
+      "frequency": 8,
+      "squawk": 6,
+      "route": 2,
+      "altitude_target": 1
+    },
+    "avg_confidence": 0.8866666666666665
+  },
+  "recommendations": []
+}

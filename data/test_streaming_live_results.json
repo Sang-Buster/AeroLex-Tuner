@@ -1,0 +1,1292 @@
+[
+  {
+    "timestamp": 1752184676.0740595,
+    "transcript": "delta two zero nine turn left heading two eight",
+    "turn_detected": true,
+    "turn_confidence": 0.8999999999999999,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.36,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184676.3240595,
+    "transcript": "delta two zero nine turn left heading two eight zero",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184676.6824505,
+    "transcript": "delta two zero nine turn left heading two eight zero",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184680.6389048,
+    "transcript": "left to two eighty delta two oh nine",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184704.0740595,
+    "transcript": "approach",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184704.3240595,
+    "transcript": "approach american",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184704.5740595,
+    "transcript": "approach american eight",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184704.8240595,
+    "transcript": "approach american eight ah",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184705.0740595,
+    "transcript": "approach american eight ah fifteen",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184705.3240595,
+    "transcript": "approach american eight ah fifteen eighty",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184705.5740595,
+    "transcript": "approach american eight ah fifteen eighty one",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184705.8240595,
+    "transcript": "approach american eight ah fifteen eighty one is",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184706.0740595,
+    "transcript": "approach american eight ah fifteen eighty one is with",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184706.3240595,
+    "transcript": "approach american eight ah fifteen eighty one is with you",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184706.5740595,
+    "transcript": "approach american eight ah fifteen eighty one is with you out",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184706.8240595,
+    "transcript": "approach american eight ah fifteen eighty one is with you out of",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184707.0740595,
+    "transcript": "approach american eight ah fifteen eighty one is with you out of two",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184685.6490736,
+    "transcript": "approach american eight ah fifteen eighty one is with you out of two",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184720.3240595,
+    "transcript": "american fifteen eighty one washington departure",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184720.5740595,
+    "transcript": "american fifteen eighty one washington departure radar",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184720.8240595,
+    "transcript": "american fifteen eighty one washington departure radar contact",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184721.0740595,
+    "transcript": "american fifteen eighty one washington departure radar contact climb",
+    "turn_detected": false,
+    "turn_confidence": 0.5,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.44,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184721.3240595,
+    "transcript": "american fifteen eighty one washington departure radar contact climb and",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184721.5740595,
+    "transcript": "american fifteen eighty one washington departure radar contact climb and maintain",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184721.8240595,
+    "transcript": "american fifteen eighty one washington departure radar contact climb and maintain one",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184722.0740595,
+    "transcript": "american fifteen eighty one washington departure radar contact climb and maintain one seven",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184722.3240595,
+    "transcript": "american fifteen eighty one washington departure radar contact climb and maintain one seven thousand",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184691.1106172,
+    "transcript": "american fifteen eighty one washington departure radar contact climb and maintain one seven thousand",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184695.2679605,
+    "transcript": "up to one seven thousand american fifteen eighty one",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184751.0740595,
+    "transcript": "delta two oh nine turn left heading two four",
+    "turn_detected": true,
+    "turn_confidence": 0.8999999999999999,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.36,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184751.3240595,
+    "transcript": "delta two oh nine turn left heading two four zero",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184699.876549,
+    "transcript": "delta two oh nine turn left heading two four zero",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184703.8335104,
+    "transcript": "left to two forty delta two oh nine",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184781.3240595,
+    "transcript": "delta two oh nine turn right ah heading two seven",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.0,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184783.8240595,
+    "transcript": "delta two oh nine turn right ah heading two seven zero direct linden when able and resume your own navigation",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.0,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184710.3978906,
+    "transcript": "delta two oh nine turn right ah heading two seven zero direct linden when able and resume your own navigation",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184796.3240595,
+    "transcript": "okay we'll go direct linden right now delta two oh",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.0,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184715.0033417,
+    "transcript": "okay we'll go direct linden right now delta two oh nine",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184811.0740595,
+    "transcript": "american fifteen eighty one turn left heading two niner",
+    "turn_detected": true,
+    "turn_confidence": 0.8999999999999999,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.36,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184811.3240595,
+    "transcript": "american fifteen eighty one turn left heading two niner zero",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184811.5740595,
+    "transcript": "american fifteen eighty one turn left heading two niner zero vectors",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184811.8240595,
+    "transcript": "american fifteen eighty one turn left heading two niner zero vectors for",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184812.0740595,
+    "transcript": "american fifteen eighty one turn left heading two niner zero vectors for your",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184812.3240595,
+    "transcript": "american fifteen eighty one turn left heading two niner zero vectors for your climb",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184720.3645775,
+    "transcript": "american fifteen eighty one turn left heading two niner zero vectors for your climb",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184724.5725977,
+    "transcript": "two ninety on the heading american fifteen eighty one",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184840.5740595,
+    "transcript": "delta two zero nine contact dulles approach",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184840.8240595,
+    "transcript": "delta two zero nine contact dulles approach control",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184841.0740595,
+    "transcript": "delta two zero nine contact dulles approach control one",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184841.3240595,
+    "transcript": "delta two zero nine contact dulles approach control one three",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184841.5740595,
+    "transcript": "delta two zero nine contact dulles approach control one three four",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184841.8240595,
+    "transcript": "delta two zero nine contact dulles approach control one three four point",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184842.0740595,
+    "transcript": "delta two zero nine contact dulles approach control one three four point two",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184842.3240595,
+    "transcript": "delta two zero nine contact dulles approach control one three four point two good",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184842.5740595,
+    "transcript": "delta two zero nine contact dulles approach control one three four point two good day",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184730.0836058,
+    "transcript": "delta two zero nine contact dulles approach control one three four point two good day",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Approach Controller",
+      "confidence": 0.8,
+      "role": "Approach",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184733.4888282,
+    "transcript": "thirty four two so long",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184871.0740595,
+    "transcript": "american fifteen eighty one turn left heading two three",
+    "turn_detected": true,
+    "turn_confidence": 0.8999999999999999,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.36,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184871.3240595,
+    "transcript": "american fifteen eighty one turn left heading two three zero",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184871.5740595,
+    "transcript": "american fifteen eighty one turn left heading two three zero vector",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184871.8240595,
+    "transcript": "american fifteen eighty one turn left heading two three zero vector ah",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184872.0740595,
+    "transcript": "american fifteen eighty one turn left heading two three zero vector ah for",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184872.3240595,
+    "transcript": "american fifteen eighty one turn left heading two three zero vector ah for your",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184872.5740595,
+    "transcript": "american fifteen eighty one turn left heading two three zero vector ah for your climb",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184739.0518615,
+    "transcript": "american fifteen eighty one turn left heading two three zero vector ah for your climb",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184743.2606573,
+    "transcript": "two thirty on the heading american fifteen eighty one",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184901.3240595,
+    "transcript": "hello washington aero star two six nine nine golf three",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.0,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184747.8697007,
+    "transcript": "hello washington aero star two six nine nine golf three thousand",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184916.3240595,
+    "transcript": "aero star nine nine golf fly heading three three zero",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.0,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184917.5740595,
+    "transcript": "aero star nine nine golf fly heading three three zero climb and maintain four thousand",
+    "turn_detected": true,
+    "turn_confidence": 0.8999999999999999,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.36,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184753.5323548,
+    "transcript": "aero star nine nine golf fly heading three three zero climb and maintain four thousand",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184757.0886416,
+    "transcript": "three three zero and four thousand",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184945.3240595,
+    "transcript": "delta seven forty three washington departure",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184945.5740595,
+    "transcript": "delta seven forty three washington departure control",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184945.8240595,
+    "transcript": "delta seven forty three washington departure control climb",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184946.0740595,
+    "transcript": "delta seven forty three washington departure control climb and",
+    "turn_detected": false,
+    "turn_confidence": 0.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.24,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184946.3240595,
+    "transcript": "delta seven forty three washington departure control climb and maintain",
+    "turn_detected": false,
+    "turn_confidence": 0.3,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.36,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184946.5740595,
+    "transcript": "delta seven forty three washington departure control climb and maintain flight",
+    "turn_detected": false,
+    "turn_confidence": 0.6,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.48,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184946.8240595,
+    "transcript": "delta seven forty three washington departure control climb and maintain flight level",
+    "turn_detected": true,
+    "turn_confidence": 0.8999999999999999,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.6,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184947.0740595,
+    "transcript": "delta seven forty three washington departure control climb and maintain flight level two",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184947.3240595,
+    "transcript": "delta seven forty three washington departure control climb and maintain flight level two three",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184947.5740595,
+    "transcript": "delta seven forty three washington departure control climb and maintain flight level two three zero",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184762.651018,
+    "transcript": "delta seven forty three washington departure control climb and maintain flight level two three zero",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": "Departure Controller",
+      "confidence": 0.8,
+      "role": "Departure",
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.64,
+    "is_final": true
+  },
+  {
+    "timestamp": 1752184961.3240595,
+    "transcript": "aero star nine nine golf climb and maintain ah six",
+    "turn_detected": true,
+    "turn_confidence": 0.8999999999999999,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.36,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184961.5740595,
+    "transcript": "aero star nine nine golf climb and maintain ah six thousand",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": false
+  },
+  {
+    "timestamp": 1752184767.4092286,
+    "transcript": "aero star nine nine golf climb and maintain ah six thousand",
+    "turn_detected": true,
+    "turn_confidence": 1.0,
+    "speaker": {
+      "speaker": null,
+      "confidence": 0.0,
+      "role": null,
+      "position": null
+    },
+    "extracted_info": {},
+    "confidence": 0.4,
+    "is_final": true
+  }
+]
